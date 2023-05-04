@@ -1,2 +1,2 @@
-# my_first_repo
-My First Repository! Created to learn how to use GitHub!
+# my_website
+My First Repository! Created to learn how to use GitHub and create my website!
