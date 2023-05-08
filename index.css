@@ -1,11 +1,41 @@
+@font-face {
+    font-family: Otaku;
+    src: url('fonts/Otaku Rant italbold.ttf');
+  }
+
+@supports (-webkit-text-stroke: 1px black) {
+    #page_title {
+        -webkit-text-stroke: 1px black;
+        -webkit-text-fill-color: #98CCA3;
+    }
+}
+
 * {
 	box-sizing: border-box;
  }
 
 body {
-    background-image: url('Images/background.png');
+    background-image: url('images/background.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
+
+#my_name {
+    font-family: Otaku;
+    font-size: 75px;
+    margin: auto;
+    margin-top: 2.5%;
+    text-align: center;
+    color: black;
+}
+
+#page_title {
+    font-family: Otaku;
+    font-size: 60px;
+    margin: auto;
+    text-align: center;
+    color: black;
+}
+
