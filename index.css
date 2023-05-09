@@ -6,12 +6,13 @@
 @supports (-webkit-text-stroke: 1px black) {
     #page_title {
         -webkit-text-stroke: 1px black;
-        -webkit-text-fill-color: #98CCA3;
+        -webkit-text-fill-color: rgb(152,204,163);
     }
 }
 
 * {
 	box-sizing: border-box;
+    scroll-behavior: smooth;
  }
 
 body {
@@ -39,3 +40,31 @@ body {
     color: black;
 }
 
+#menu {
+    font-family: Otaku;
+    width: 30%;
+    margin: auto;
+    margin-top: 3.5%;
+    font-size: 50px;
+    text-align: center;
+
+}
+
+#menu div {
+    border-radius: 10px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 3px solid rgb(178,101,89);
+    margin-bottom: 10%;
+    background-color: rgba(178,101,89,0.5);
+    transition: 0.5s
+}
+
+#menu div:last-of-type {
+    margin-bottom: 0;
+}
+
+#menu div:hover {
+    background-color: rgba(178,101,89,1);
+}
