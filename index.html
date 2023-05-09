@@ -5,16 +5,42 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MR: My First Website</title>
         <link rel="stylesheet" href="index.css">
+        <script type="text/javascript" src="scripts.js"></script>
     </head>
-    <body> 
-        <header>
-            <h1 id="my_name">Miguel Rodrigues</h1>
-            <h3 id="page_title">My First Website</h3>
-        </header>
-        <section id="menu">
-            <div id="about_me">About me</div>
-            <div id="my_career">My Career</div>
-            <div id="faq">FAQ</div>
-        </section>
+    <body>
+        <main>
+            <div id="welcome_screen">
+                <header>
+                    <h1 id="my_name">Miguel Rodrigues</h1>
+                    <h3 id="page_title">My First Website</h3>
+                </header>
+                <section id="menu">
+                    <div name="about_me"><a href="#about_me" accesskey="1">About me</a></div>
+                    <div name="my_career">My Career</div>
+                    <div id="faq">FAQ</div>
+                </section>
+            </div>
+            <section id="about_me">
+                <img src="images/chibi.png">
+                <h3>About me</h3>
+                <p>I started my professional career as a mechanical engineer but always loved digital technologies. 
+                    Once the opportunity to work in the IT industry appeared I decided to grab it and give it a try and so I became a software tester. 
+                    I also enjoy programming a lot and learnt how to program using Python and JAVA. Furthermore, since I've recently learnt about HTML and CSS, 
+                    I decided to put my skills to the test and build this webpage where I talk a bit about myself so that you can get to know me better. 
+                    Other than programming I enjoy reading, playing videogames, traveling and going for peaceful walks outside. 
+                    I like many things more but those are the main ones! So, what do you think? Want to be friends? 😊</p>
+            </section>
+            <section id="my_career">
+                <img src="images/chibi.png">
+                <h3>About me</h3>
+                <p>I started my professional career as a mechanical engineer but always loved digital technologies. 
+                    Once the opportunity to work in the IT industry appeared I decided to grab it and give it a try and so I became a software tester. 
+                    I also enjoy programming a lot and learnt how to program using Python and JAVA. Furthermore, since I've recently learnt about HTML and CSS, 
+                    I decided to put my skills to the test and build this webpage where I talk a bit about myself so that you can get to know me better. 
+                    Other than programming I enjoy reading, playing videogames, traveling and going for peaceful walks outside. 
+                    I like many things more but those are the main ones! So, what do you think? Want to be friends? 😊</p>
+            </section>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        </main>
     </body>
 </html>
