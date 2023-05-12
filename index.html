@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MR: My First Website</title>
         <link rel="stylesheet" href="index.css">
-        <script type="text/javascript" src="scripts.js"></script>
+        <script defer src="scripts.js"></script>
     </head>
     <body>
         <main>
@@ -16,16 +16,16 @@
                 </header>
                 <section id="menu">
                     <div name="about_me"><a href="#about_me" accesskey="1">About me</a></div>
-                    <div name="my_career">My Career</div>
-                    <div name="faq">FAQ</div>
+                    <div name="my_career"><a href="#my_career" accesskey="2">My Career</a></div>
+                    <div name="faq"><a href="#faq" accesskey="3">FAQ</a></div>
                 </section>
             </div>
             <section id="about_me">
                 <img src="images/room.png">
                 <h3>About me</h3>
-                    <p>I started my professional career as a mechanical engineer but always loved digital technologies. 
+                    <p class="section_p">I started my professional career as a mechanical engineer but always loved digital technologies. 
                     Once the opportunity to work in the IT industry appeared I decided to give it a try and so I became a software tester.
-                    I also enjoy programming a lot and learnt how to program using Python and JAVA. Furthermore, since I've recently learnt about HTML and CSS 
+                    I also enjoy programming a lot and learnt how to program using Python and JAVA. Furthermore, since I've recently learnt HTML and CSS 
                     I decided to put my skills to the test and build this webpage where I talk a bit about myself so that you can get to know me better. 
                     I intend on doing more projects and post about them here but I'm taking it one step a time. Other than programming I enjoy:</p>
                     <br>
@@ -36,17 +36,77 @@
                         <li>🚶🏻  Peaceful walks 🚶🏻</li>
                     </ul>
                     <br>
-                    <p>I like many things more but those are the main ones! <br> So, what do you think? Want to be friends? 😊</p>
+                    <p class="section_p">I like many things more but those are the main ones! <br> So, what do you think? Want to be friends? 😊</p>
+            </section>
+            <section id="skills">
+                <img src="images/room.png">
+                <h3>My Skills</h3>
+                    <p class="section_p">I started my professional career as a mechanical engineer but always loved digital technologies. 
+                    Once the opportunity to work in the IT industry appeared I decided to give it a try and so I became a software tester.
+                    I also enjoy programming a lot and learnt how to program using Python and JAVA. Furthermore, since I've recently learnt HTML and CSS 
+                    I decided to put my skills to the test and build this webpage where I talk a bit about myself so that you can get to know me better. 
+                    I intend on doing more projects and post about them here but I'm taking it one step a time. Other than programming I enjoy:</p>
+                    <br>
+                    <ul id="hobbies">
+                        <li>📚 Reading 📚</li>
+                        <li>🎮 Gaming 🎮</li>
+                        <li>🗺️ Traveling 🗺️</li>
+                        <li>🚶🏻  Peaceful walks 🚶🏻</li>
+                    </ul>
+                    <br>
+                    <p class="section_p">I like many things more but those are the main ones! <br> So, what do you think? Want to be friends? 😊</p>
             </section>
             <section id="my_career">
                 <img src="images/chibi.png">
                 <h3>My Career</h3>
-                <p>I started my professional career as a mechanical engineer but always loved digital technologies. 
+                <p class="section_p">I started my professional career as a mechanical engineer but always loved digital technologies. 
                     Once the opportunity to work in the IT industry appeared I decided to grab it and give it a try and so I became a software tester. 
                     I also enjoy programming a lot and learnt how to program using Python and JAVA. Furthermore, since I've recently learnt about HTML and CSS, 
                     I decided to put my skills to the test and build this webpage where I talk a bit about myself so that you can get to know me better. 
                     Other than programming I enjoy reading, playing videogames, traveling and going for peaceful walks outside. 
-                    I like many things more but those are the main ones!So, what do you think? Want to be friends? 😊<p/>
+                    I like many things more but those are the main ones!So, what do you think? Want to be friends? 😊</p>
+            </section>
+            <section id="faq">
+                <img src="images/chibi.png">
+                <img src="images/chibi.png">
+                <h3>FAQ</h3>
+                
+                <button class="accordion">What's your name?</button>
+                <div class="panel"><p>Miguel</p></div>
+                
+                <button class="accordion">Where are you from?</button>
+                <div class="panel"><p>Portugal</p></div>
+                
+                <button class="accordion">What's your best quality?</button>
+                <div class="panel"><p>I'm a team player</p></div>
+
+                <button class="accordion">What's your worst quality?</button>
+                <div class="panel"><p>Lack of persuasiveness</p></div>
+
+                <button class="accordion">What have you been playing?</button>
+                <div class="panel"><p>The Legend of Zelda: Tears of the Kingdom</p></div>
+
+                <button class="accordion">What have you been reading?</button>
+                <div class="panel"><p>Happy Sugar Life</p></div>
+
+                <button class="accordion">What's your next traveling destination?</button>
+                <div class="panel"><p>A peaceful and sunny location for sure! </p></div>
+
+                <button class="accordion">What's one thing people don't know about you?</button>
+                <div class="panel"><p>I don't like to eat fish because I'm lazy to take care of the fish bones</p></div>
+
+                <button class="accordion">Do you have anything to tell to the reader?</button>
+                <div class="panel"><p>Thanks for coming!</p></div>
+
+                <button class="accordion">Do you have anything to tell to the reader?</button>
+                <div class="panel"><p>Thanks for coming!</p></div>
+
+                <button class="accordion">Do you have anything to tell to the reader?</button>
+                <div class="panel"><p>Thanks for coming!</p></div>
+
+                <button class="accordion">Do you have anything to tell to the reader?</button>
+                <div class="panel"><p>Thanks for coming!</p></div>
+
             </section>
         </main>
     </body>

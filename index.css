@@ -72,12 +72,9 @@
     transition: 0.5s
 }
 
-a {
-    text-decoration: none;
-}
-
-a:visited { 
+a, a:visited {
     color: black;
+    text-decoration: none;
 }
 
 body {
@@ -89,21 +86,23 @@ img {
     float: left;
     height: 50vh;
     margin-right: 2.5%;
+    clear: both;
 }
 
 #about_me {
     height: 50vh;
 	width: 100vw;
     background-color: white;
-    margin-top: 0;
     position:relative;
     overflow:auto;
 }
 
-#my_career {
-    height: 50vh;
+#my_career, #faq {
+    height: 100vh;
 	width: 100vw;
     background-color: aqua;
+    position:relative;
+    overflow:auto;
 }
 
 #hobbies {
@@ -120,11 +119,11 @@ h3 {
     font-family: Otaku;
     font-size: 50px;
     margin-top: 1%;
-    margin-bottom: 1%;
+    margin-bottom: 2.5%;
 
 }
 
-p {
+.section_p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     margin-top: 0;
@@ -132,3 +131,56 @@ p {
     margin-right: 5%;
     margin-left: 27.5%;
 }
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 70%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+  
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+
+}
+
+.accordion:first-of-type {
+    border-radius: 5px 5px 0 0;
+}
+
+.accordion:last-of-type {
+    border-radius: 0 0 5px 5px;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    width: 70%;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.accordion:after {
+    content: '+'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "-"; /* Unicode character for "minus" sign (-) */
+    transition: all 0.4s ease;
+  }
