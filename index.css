@@ -1,20 +1,35 @@
+/* Variables */
+:root {
+    --bottom_border: 2px solid #444;
+    --otaku: Otaku;
+    --theme_color_solid: #FF9912;
+    --theme_color_transparent: #FF991250;
+    --color_titles: black;
+    --color_text: #444;
+}
+
+/* Location of Otaku font */
 @font-face {
     font-family: Otaku;
     src: url('fonts/Otaku Rant italbold.ttf');
   }
 
-@supports (-webkit-text-stroke: 1px black) {
+/* Subtitle contour */
+@supports (-webkit-text-stroke: 1px var(--color_titles)) {
     #page_title {
-        -webkit-text-stroke: 1px black;
-        -webkit-text-fill-color: rgb(152,204,163);
+        -webkit-text-stroke: 1px var(--color_titles);
+        -webkit-text-fill-color: var(--theme_color_solid);
     }
 }
 
+/* Box sizing and scroll behavior properties*/
 * {
 	box-sizing: border-box;
     scroll-behavior: smooth;
  }
 
+ /* Welcomer screen properties:
+What the user sees as soon as he lands on the page */
  #welcome_screen {
     height: 100vh;
 	width: 100vw;
@@ -24,87 +39,131 @@
     background-size: cover;
     position:relative;
     overflow:auto;
+    border-bottom: var(--bottom_border);
 }
 
+/* Properties for my name that shows at the top of the page */
 #my_name {
-    font-family: Otaku;
+    font-family: var(--otaku);
     font-size: 75px;
     margin: auto;
     margin-top: 2.5%;
     text-align: center;
-    color: black;
+    color: var(--color_titles);
 }
 
+/* Properties for the page title that shows at the top of the page,
+under my name */
 #page_title {
-    font-family: Otaku;
+    font-family: var(--otaku);
     font-size: 60px;
     margin: auto;
     text-align: center;
-    color: black;
+    color: var(--color_titles);
 }
 
+/* Properties for the menu */
 #menu {
-    font-family: Otaku;
+    font-family: var(--otaku);
     width: 30%;
     margin: auto;
     margin-top: 3.5%;
     font-size: 40px;
     text-align: center;
-
+    
 }
 
+/* Properties for the menu's options */
 #menu div {
     border-radius: 10px;
     height: 50px;
     line-height: 50px;
     text-align: center;
-    border: 3px solid rgb(178,101,89);
+    border: 3px solid var(--theme_color_solid);
     margin-bottom: 10%;
-    background-color: rgba(178,101,89,0.5);
+    background-color:  var(--theme_color_transparent);
 }
 
-#menu div:last-of-type {
-    margin-bottom: 0;
-}
-
+/* Properties for the when the user hovers 
+the mouse on one of the menu's options */
 #menu div:hover {
-    background-color: rgba(178,101,89,1);
+    background-color: var(--theme_color_solid);
     transition: 0.5s
 }
 
+/* Menu links' properties.
+No blue hyperlink text. 
+No line under the text.
+No purple color when the user clicks on the links. */
 a, a:visited {
     color: black;
     text-decoration: none;
 }
 
+/* Make body fill the entire screen */
 body {
     margin: 0;
     padding: 0;
 }
 
+/* Image's properties*/
 img {
     float: left;
     height: 50vh;
     margin-right: 2.5%;
     clear: both;
+    border-bottom: var(--bottom_border);
 }
 
+/* General properties for: 
+    - "About me" section
+    - "Skills" section */
 #about_me {
     height: 50vh;
 	width: 100vw;
     background-color: white;
-    position:relative;
-    overflow:auto;
+    border-bottom: var(--bottom_border);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2.5vw), 0 100%);
 }
 
-#my_career, #faq {
+#skills {
+    margin-top: 5% ;
+    height: 50vh;
+	width: 100vw;
+    background-color: white;
+    border-bottom: var(--bottom_border);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2.5vw), 0 100%);
+}
+
+.container {
+    position: relative;
+    height: 50vh;
+  }
+
+  .small-container {
+    position: absolute;
+    background: black;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    clip-path: polygon(-1% -1%, 99% 1%, 101% calc(101% - 2.5vw), -1% 101%);
+    z-index: -1;
+  }
+
+
+#faq {
     height: 100vh;
 	width: 100vw;
-    background-color: aqua;
+    background-color: white;
     position:relative;
     overflow:auto;
+    margin: auto;
 }
 
+/* Styling of hobbies list */
 #hobbies {
     list-style-type: none; 
     padding: 0; 
@@ -112,15 +171,17 @@ img {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     text-indent: 5%;
+    color: var(--color_text);
 }
 
+/* Section title properties*/
 h3 {
     text-align: center;
-    font-family: Otaku;
+    font-family: var(--otaku);
     font-size: 50px;
-    margin-top: 1%;
+    margin-top: 0;
     margin-bottom: 2.5%;
-
+    padding-top: 1%;
 }
 
 .section_p {
@@ -130,12 +191,22 @@ h3 {
     margin-bottom: 0%;
     margin-right: 5%;
     margin-left: 27.5%;
+    color: var(--color_text);
 }
+
+/* Back to top button properties */
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    }
+    
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-    background-color: #eee;
-    color: #444;
+    background-color:  var(--theme_color_transparent);
+    color: var(--color_text);
     cursor: pointer;
     padding: 18px;
     width: 70%;
@@ -145,12 +216,12 @@ h3 {
     transition: 0.5s;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+    margin-left: 12.5%;
 }
   
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
-    background-color: #ccc;
-
+    background-color: var(--theme_color_solid);
 }
 
 .accordion:first-of-type {
@@ -161,15 +232,20 @@ h3 {
     border-radius: 0 0 5px 5px;
 }
 
+.panel:last-of-type {
+    border-radius: 0 0 5px 5px;
+}
+
 /* Style the accordion panel. Note: hidden by default */
 .panel {
     padding: 0 18px;
     width: 70%;
-    background-color: white;
+    background-color: #50505025;
     display: none;
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+    margin-left: 12.5%;
 }
 
 .accordion:after {

@@ -3,8 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MR: My First Website</title>
+        <title>Miguel Rodrigues</title>
         <link rel="stylesheet" href="index.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script defer src="scripts.js"></script>
     </head>
     <body>
@@ -15,11 +17,12 @@
                     <h3 id="page_title">My First Website</h3>
                 </header>
                 <section id="menu">
-                    <div name="about_me"><a href="#about_me" accesskey="1">About me</a></div>
-                    <div name="my_career"><a href="#my_career" accesskey="2">My Career</a></div>
-                    <div name="faq"><a href="#faq" accesskey="3">FAQ</a></div>
+                    <a href="#about_me" accesskey="1"><div name="about_me">About me</div></a>
+                    <a href="#skills" accesskey="2"><div name="skills">My Skills</div></a>
+                    <a href="#faq" accesskey="3"><div name="faq">FAQ</div></a>
                 </section>
             </div>
+            <div class="container">
             <section id="about_me">
                 <img src="images/room.png">
                 <h3>About me</h3>
@@ -38,39 +41,43 @@
                     <br>
                     <p class="section_p">I like many things more but those are the main ones! <br> So, what do you think? Want to be friends? 😊</p>
             </section>
+            <div class="small-container"></div>
+            </div>
             <section id="skills">
-                <img src="images/room.png">
+                <img src="images/aaaa.jpg">
                 <h3>My Skills</h3>
-                    <p class="section_p">I started my professional career as a mechanical engineer but always loved digital technologies. 
-                    Once the opportunity to work in the IT industry appeared I decided to give it a try and so I became a software tester.
-                    I also enjoy programming a lot and learnt how to program using Python and JAVA. Furthermore, since I've recently learnt HTML and CSS 
-                    I decided to put my skills to the test and build this webpage where I talk a bit about myself so that you can get to know me better. 
-                    I intend on doing more projects and post about them here but I'm taking it one step a time. Other than programming I enjoy:</p>
-                    <br>
-                    <ul id="hobbies">
-                        <li>📚 Reading 📚</li>
-                        <li>🎮 Gaming 🎮</li>
-                        <li>🗺️ Traveling 🗺️</li>
-                        <li>🚶🏻  Peaceful walks 🚶🏻</li>
-                    </ul>
-                    <br>
-                    <p class="section_p">I like many things more but those are the main ones! <br> So, what do you think? Want to be friends? 😊</p>
-            </section>
-            <section id="my_career">
-                <img src="images/chibi.png">
-                <h3>My Career</h3>
-                <p class="section_p">I started my professional career as a mechanical engineer but always loved digital technologies. 
-                    Once the opportunity to work in the IT industry appeared I decided to grab it and give it a try and so I became a software tester. 
-                    I also enjoy programming a lot and learnt how to program using Python and JAVA. Furthermore, since I've recently learnt about HTML and CSS, 
-                    I decided to put my skills to the test and build this webpage where I talk a bit about myself so that you can get to know me better. 
-                    Other than programming I enjoy reading, playing videogames, traveling and going for peaceful walks outside. 
-                    I like many things more but those are the main ones!So, what do you think? Want to be friends? 😊</p>
+                <table>
+                    <tr>
+                      <th>Programming</th>
+                      <th>Testing</th>
+                      <th>Soft Skills</th>
+                      <th>Languages</th>
+                    </tr>
+                    <tr>
+                      <td>HTML/CSS</td>
+                      <td>Functional Testing</td>
+                      <td>Portuguese</td>
+                    </tr>
+                    <tr>
+                      <td>Java</td>
+                      <td>Integration Testing</td>
+                      <td>English</td>
+                    </tr>
+                    <tr>
+                        <td>MatLab</td>
+                        <td>Performance Testing</td>
+                    </tr>
+                    <tr>
+                        <td>Test Automation</td>
+                    </tr>
+                    <tr>
+                        <td>SQL</td>
+                    </tr>
+                </table>
             </section>
             <section id="faq">
-                <img src="images/chibi.png">
-                <img src="images/chibi.png">
+               
                 <h3>FAQ</h3>
-                
                 <button class="accordion">What's your name?</button>
                 <div class="panel"><p>Miguel</p></div>
                 
@@ -108,6 +115,9 @@
                 <div class="panel"><p>Thanks for coming!</p></div>
 
             </section>
+            <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+                <i class="fa fa-home"></i>      
+            </button>
         </main>
     </body>
 </html>
