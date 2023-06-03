@@ -7,10 +7,14 @@
         <link rel="stylesheet" href="index.css">
         <link rel="icon" type="image/x-icon" href="images/favicon.ico">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css" rel="stylesheet"/>
         <script defer src="scripts.js"></script>
     </head>
     <body>
         <main>
+            <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+                Back to Top
+            </button>
             <div id="welcome_screen">
                 <header>
                     <h1 id="my_name">Miguel Rodrigues</h1>
@@ -22,7 +26,6 @@
                     <a href="#faq" accesskey="3"><div name="faq">FAQ</div></a>
                 </section>
             </div>
-            
             <section id="about_me">
                 <img src="images/room.png">
                 <h3>About me</h3>
@@ -41,9 +44,8 @@
                     <br>
                     <p class="section_p">I like many things more but those are the main ones! <br> So, what do you think? Want to be friends? 😊</p>
             </section>
-             <!-- 
             <section id="skills">
-                <img src="images/skills.jpg">
+                <img src="images/skillsbw.jpg">
                 <h3>My Skills</h3>
                 <table>
                     <tr>
@@ -75,49 +77,67 @@
                 </table>
             </section>
             <section id="faq">
-               
                 <h3>FAQ</h3>
-                <button class="accordion">What's your name?</button>
-                <div class="panel"><p>Miguel</p></div>
-                
-                <button class="accordion">Where are you from?</button>
-                <div class="panel"><p>Portugal</p></div>
-                
-                <button class="accordion">What's your best quality?</button>
-                <div class="panel"><p>I'm a team player</p></div>
-
-                <button class="accordion">What's your worst quality?</button>
-                <div class="panel"><p>Lack of persuasiveness</p></div>
-
-                <button class="accordion">What have you been playing?</button>
-                <div class="panel"><p>The Legend of Zelda: Tears of the Kingdom</p></div>
-
-                <button class="accordion">What have you been reading?</button>
-                <div class="panel"><p>Happy Sugar Life</p></div>
-
-                <button class="accordion">What's your next traveling destination?</button>
-                <div class="panel"><p>A peaceful and sunny location for sure! </p></div>
-
-                <button class="accordion">What's one thing people don't know about you?</button>
-                <div class="panel"><p>I don't like to eat fish because I'm lazy to take care of the fish bones</p></div>
-
-                <button class="accordion">Do you have anything to tell to the reader?</button>
-                <div class="panel"><p>Thanks for coming!</p></div>
-
-                <button class="accordion">Do you have anything to tell to the reader?</button>
-                <div class="panel"><p>Thanks for coming!</p></div>
-
-                <button class="accordion">Do you have anything to tell to the reader?</button>
-                <div class="panel"><p>Thanks for coming!</p></div>
-
-                <button class="accordion">Do you have anything to tell to the reader?</button>
-                <div class="panel"><p>Thanks for coming!</p></div>
-
+                <div id="faq_list">
+                    <ul>
+                        <li>
+                            <input type="checkbox" checked>
+                            <i></i>
+                            <h2>Where are you from?</h2>
+                            <p>I live in a small village in Portugal <span class="flag-icon flag-icon-pt"></span></p>
+                        </li>
+                        <li>
+                            <input type="checkbox" checked>
+                            <i></i>
+                            <h2>What's your best quality?</h2>
+                            <p>I'm a team player 🤜🏻🤛🏾</p>
+                        </li>
+                        <li>
+                            <input type="checkbox" checked>
+                            <i></i>
+                            <h2>What's your worst quality?</h2>
+                            <p>Lack of persuasiveness 🙃</p>
+                        </li>
+                        <li>
+                            <input type="checkbox" checked>
+                            <i></i>
+                            <h2>What have you been playing?</h2>
+                            <p>The Legend of Zelda: Tears of the Kingdom 🎮</p>
+                        </li>
+                        <li>
+                            <input type="checkbox" checked>
+                            <i></i>
+                            <h2>What have you been reading?</h2>
+                            <p>Happy Sugar Life 📚</p>
+                        </li>
+                        <li>
+                            <input type="checkbox" checked>
+                            <i></i>
+                            <h2>What's one thing people don't know about you?</h2>
+                            <p>I don't like to eat fish because I'm lazy to remove the fish bones 😬</p>
+                        </li>
+                        <li>
+                            <input type="checkbox" checked>
+                            <i></i>
+                            <h2>What's your next traveling destination?</h2>
+                            <p>A peaceful and sunny location for sure! 🏖️</p>
+                        </li>
+                        <li>
+                            <input type="checkbox" checked>
+                            <i></i>
+                            <h2>Where can I find out more about Miguel?</h2>
+                            <p>You can check my LinkedIn profile by clicking 
+                                <a href="https://www.linkedin.com/in/miguelamrodrigues/" target=_blank id="LinkedIn">here</a> 🕵🏻</p>
+                        </li>
+                        <li>
+                            <input type="checkbox" checked>
+                            <i></i>
+                            <h2>Anything more you want to tell to the reader?</h2>
+                            <p>Thank you so much for coming!! 🤩</p>
+                        </li>
+                    </ul>
+                </div>
             </section>
-            <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
-                <i class="fa fa-home"></i>      
-            </button>
-        -->
         </main>
     </body>
 </html>
