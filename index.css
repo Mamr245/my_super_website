@@ -356,3 +356,29 @@ section.faq_list {
   font-weight: bold;
 }
 
+/* Skills images properties, using flex */
+#skills ul {
+  list-style-type: none; 
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(15px + 10%) ;
+  margin-top: 3.5%;
+}
+
+#skills li {
+  height: 11vh;
+  flex-grow: 1;
+}
+
+#skills li:last-child {
+  flex-grow: 9;
+}
+
+#skills > ul img {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: contain;
+  vertical-align: bottom;
+  border: none;
+  border-radius: 5px;
+}
