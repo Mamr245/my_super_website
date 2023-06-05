@@ -1,3 +1,7 @@
+/* This file contains the base design of the page 
+Designed with Full HD resolution
+*/
+
 /* Variables */
 :root {
     --border: 2px solid #444;
@@ -6,31 +10,6 @@
     --theme_color_transparent: #FF991250;
     --color_titles: black;
     --color_text: #444;
-}
-
- /* Fade in animation
- Used when user lands on the page */
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-     }
-}
-
-/* Location of Otaku font */
-@font-face {
-    font-family: Otaku;
-    src: url('fonts/Otaku Rant italbold.ttf');
-}
-
-/* Subtitle contour */
-@supports (-webkit-text-stroke: 1px var(--color_titles)) {
-    #page_title {
-        -webkit-text-stroke: 1px var(--color_titles);
-        -webkit-text-fill-color: var(--theme_color_solid);
-    }
 }
 
 /* Box sizing and scroll behavior properties*/
@@ -43,6 +22,8 @@
 body {
   margin: 0;
   padding: 0;
+  max-width: 1920px;
+  max-height: 1080px;
 }
 
 /* Welcomer screen properties:
@@ -173,7 +154,7 @@ h3 {
     font-family: var(--otaku);
     font-size: 50px;
     margin-top: 0;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
     padding-top: 1%;
 }
 
@@ -366,7 +347,7 @@ section.faq_list {
 }
 
 #skills li {
-  height: 11vh;
+  height: 10vh;
   flex-grow: 1;
 }
 
@@ -381,4 +362,29 @@ section.faq_list {
   vertical-align: bottom;
   border: none;
   border-radius: 5px;
+}
+
+/* Fade in animation
+ Used when user lands on the page */
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+/* Location of Otaku font */
+@font-face {
+    font-family: Otaku;
+    src: url('fonts/Otaku Rant italbold.ttf');
+}
+
+/* Subtitle contour */
+@supports (-webkit-text-stroke: 1px var(--color_titles)) {
+    #page_title {
+        -webkit-text-stroke: 1px var(--color_titles);
+        -webkit-text-fill-color: var(--theme_color_solid);
+    }
 }

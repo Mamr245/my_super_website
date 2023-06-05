@@ -1,0 +1,162 @@
+/*This file contains the css code to make 
+the webpage reactive to different screen sizes  */
+
+@media screen and (max-width: 500px) and (max-height: 700px) {
+    #skills > img, #about_me > img {
+      display: none;
+    }
+
+    #my_name {
+        font-size: 10vw;
+        margin-top: 12.5%;
+    }
+
+    #page_title {
+        font-size: 8vw;
+    }
+
+    #menu {
+        font-size: 8vw;
+        width: 75%;
+        margin-top: 27.5%;
+    }
+
+    .section_p {
+        margin: 0 5% 0 5%;
+        color: var(--color_text);
+    }
+  
+    #hobbies {
+        margin: 0;
+        text-align: center;
+        color: var(--color_text);
+    }
+  
+    h3 {
+        font-size: 5vw;
+        margin: 5%
+    }
+  
+    #faq_list p, #faq_list h2, 
+    #hobbies, .section_p  {
+        font-size: 3.1vw;
+    }
+
+    #btn-back-to-top {
+        bottom: 20px;
+        right: 20px;
+        cursor: pointer; 
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 3vw;
+    }
+
+    #skills ul {
+        margin-right: 5%;
+    }
+    
+    #skills li {
+        height: 8vh;
+    }
+}
+
+@media screen and (max-width: 500px) and (min-height: 701px) {
+    #skills > img, #about_me > img {
+      display: none;
+    }
+
+    #my_name {
+        font-size: 10vw;
+        margin-top: 12.5%;
+    }
+
+    #page_title {
+        font-size: 8vw;
+    }
+
+    #menu {
+        font-size: 8vw;
+        width: 75%;
+        margin-top: 27.5%;
+    }
+
+    .section_p {
+        margin: 0 5% 0 5%;
+        color: var(--color_text);
+    }
+  
+    #hobbies {
+        margin: 0;
+        text-align: center;
+        color: var(--color_text);
+    }
+  
+    h3 {
+        font-size: 5vw;
+        margin: 5%
+    }
+  
+    #faq_list p, #faq_list h2, 
+    #hobbies, .section_p  {
+        font-size: 3.7vw;
+    }
+
+    #btn-back-to-top {
+        bottom: 20px;
+        right: 20px;
+        cursor: pointer; 
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 4vw;
+    }
+
+    #skills ul {
+        margin-right: 5%;
+    }
+    
+    #skills li {
+        height: 7.25vh;
+    }
+}
+
+
+@media screen and (min-width: 500px) and (max-height: 500px) {
+    #skills > img, #about_me > img,
+     #skills, #about_me {
+        height: 100vh;
+      }
+
+      .section_p, #hobbies {
+       font-size: 1.6vw;
+    }
+
+    h3 {
+        font-size: 4vw;  
+    }
+
+    #skills li {
+        height: 15vh;
+    }
+    
+    #my_name {
+        font-size: 7vw;
+    }
+
+    #page_title {
+        font-size: 5vw;
+    }
+
+    #menu {
+        font-size: 4vw;
+        margin-top: 1.5%;
+    }
+
+    #btn-back-to-top {
+        bottom: 20px;
+        right: 20px;
+        cursor: pointer; 
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 2vw;
+    }
+}
