@@ -25,7 +25,8 @@ body {
   max-width: 1920px;
   max-height: 1080px;
   min-width: 300px;
-  min-height: 300px;
+  min-height: 500px;
+
 }
 
 /* Welcomer screen properties:
@@ -72,7 +73,7 @@ under my name */
     font-family: var(--otaku);
     width: 30%;
     margin: auto;
-    margin-top: 3.5%;
+    margin-top: 6%;
     font-size: 40px;
     text-align: center;
     animation: fadeInAnimation ease 5s;
@@ -239,7 +240,7 @@ section.faq_list {
   color: var(--color_text);
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.1vw /*18px*/;
+  font-size: 1vw /*18px*/;
   line-height: 1.45;
   position: relative;
   overflow: hidden;
@@ -389,4 +390,13 @@ section.faq_list {
         -webkit-text-stroke: 1px var(--color_titles);
         -webkit-text-fill-color: var(--theme_color_solid);
     }
+}
+
+/* Change menu options background color 
+if device is touchscreen and has small size */
+@media (hover: none) and (max-width: 500px) {
+  #menu div {
+    border: 3px solid var(--theme_color_solid);
+    background-color: var(--theme_color_solid);
+  }
 }

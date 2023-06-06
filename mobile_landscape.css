@@ -1,8 +1,53 @@
 /*This file contains the css code to make 
 the webpage reactive to different screen sizes 
-for mobile devices in landscape mode */
+for mobile devices in landscape mode 
 
-@media screen and (min-width: 500px) and (max-width: 1000px) and (orientation: landscape) {
+@media screen and (max-width: 700px) and (orientation: landscape) {
+    #skills > img, #about_me > img,
+     #skills, #about_me {
+        height: 100vh;
+    }
+
+    #faq_list {
+        max-width: 90%; }
+
+    #faq_list p, #faq_list h2, 
+    #hobbies, .section_p  {
+        font-size: 1.6vw;
+    }
+
+    h3 {
+        font-size: 4vw;  
+    }
+
+    #skills li {
+        height: 12vh;
+    }
+    
+    #my_name {
+        font-size: 7vw;
+    }
+
+    #page_title {
+        font-size: 5vw;
+    }
+
+    #menu {
+        font-size: 4vw;
+        margin-top: 3.5%;
+    }
+
+    #btn-back-to-top {
+        bottom: 20px;
+        right: 20px;
+        cursor: pointer; 
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 2vw;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1000px) and (orientation: landscape) {
     #skills > img, #about_me > img,
      #skills, #about_me {
         height: 100vh;
@@ -33,13 +78,8 @@ for mobile devices in landscape mode */
     }
 
     #menu {
-        font-size: 4vw;
-        margin-top: 3.5%;
-    }
-    
-    #menu div {
-        border: 3px solid var(--theme_color_solid);
-        background-color:  var(--theme_color_solid);
+        font-size: 3.5vw;
+        margin-top: 1.75%;
     }
 
     #btn-back-to-top {
@@ -51,3 +91,35 @@ for mobile devices in landscape mode */
         font-size: 2vw;
     }
 }
+
+@media screen and (min-width: 1001px) and (max-width: 1400px) and (orientation: landscape) {
+
+    #faq_list p, #faq_list h2, 
+    #hobbies, .section_p  {
+        font-size: 1.35vw;
+    }
+
+    h3 {
+        font-size: 4vw;  
+    }
+
+    #skills li {
+        height: 8.5vh;
+    }
+    
+    #my_name {
+        font-size: 7vw;
+    }
+
+    #page_title {
+        font-size: 5vw;
+    }
+
+    #menu {
+        font-size: 3.5vw;
+        margin-top: 11%;
+    }
+}
+
+*/
+
