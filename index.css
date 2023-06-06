@@ -24,6 +24,8 @@ body {
   padding: 0;
   max-width: 1920px;
   max-height: 1080px;
+  min-width: 300px;
+  min-height: 300px;
 }
 
 /* Welcomer screen properties:
@@ -143,7 +145,7 @@ a, a:visited {
     padding: 0; 
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 1.1vw /*20px*/;
     text-indent: 5%;
     color: var(--color_text);
 }
@@ -152,7 +154,7 @@ a, a:visited {
 h3 {
     text-align: center;
     font-family: var(--otaku);
-    font-size: 50px;
+    font-size: 3vw /*50px*/;
     margin-top: 0;
     margin-bottom: 1%;
     padding-top: 1%;
@@ -160,7 +162,7 @@ h3 {
 
 .section_p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 1.1vw /*20px*/;
     margin-top: 0;
     margin-bottom: 0%;
     margin-right: 5%;
@@ -220,7 +222,7 @@ section.faq_list {
 #faq_list h2 {
   color: var(--theme_color_solid);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 24px;
+  font-size: 1.25vw /*24px*/;
   line-height: 24px;
   text-align: left;
   padding: 15px 15px 0;
@@ -237,7 +239,7 @@ section.faq_list {
   color: var(--color_text);
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 1.1vw /*18px*/;
   line-height: 1.45;
   position: relative;
   overflow: hidden;

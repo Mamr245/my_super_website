@@ -13,7 +13,11 @@ function scrollFunction() {
     document.documentElement.scrollTop > 20
   ) {
     mybutton.style.display = "block";
-  } else {
+  } 
+  else {
+    mybutton.style.display = "none";
+  }
+  if (window.innerWidth < 1000) {
     mybutton.style.display = "none";
   }
 }

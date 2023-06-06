@@ -1,0 +1,212 @@
+/*This file contains the css code to make 
+the webpage reactive to different screen sizes 
+for mobile devices in portrait mode */
+
+@media only screen and (max-width: 375px) and (orientation: portrait) {
+    #skills > img, #about_me > img {
+      display: none;
+    }
+
+    #my_name {
+        font-size: 10vw;
+        margin-top: 12.5%;
+    }
+
+    #page_title {
+        font-size: 8vw;
+    }
+
+    #menu {
+        font-size: 8vw;
+        width: 75%;
+        margin-top: 27.5%;
+    }
+
+    #menu div {
+        border: 3px solid var(--theme_color_solid);
+        background-color:  var(--theme_color_solid);
+    }
+
+    .section_p {
+        margin: 0 5% 0 5%;
+        color: var(--color_text);
+    }
+  
+    #hobbies {
+        margin: 0;
+        text-align: center;
+        color: var(--color_text);
+    }
+  
+    h3 {
+        font-size: 6vw;
+        margin: 5%
+    }
+  
+    #faq_list p, #faq_list h2, 
+    #hobbies, .section_p  {
+        font-size: 3.1vw;
+    }
+
+    #btn-back-to-top {
+        bottom: 20px;
+        right: 20px;
+        cursor: pointer; 
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 3vw;
+    }
+
+    #skills ul {
+        margin-right: 5%;
+    }
+    
+    #skills li {
+        height: 7.5vh;
+    }
+
+    #page_title {
+        -webkit-text-stroke: var(--theme_color_solid);
+        -webkit-text-fill-color: var(--theme_color_solid);
+    }
+}
+
+@media only screen and (min-width: 376px) and (orientation: portrait) {
+    #skills > img, #about_me > img {
+      display: none;
+    }
+
+    #my_name {
+        font-size: 10vw;
+        margin-top: 20%;
+    }
+
+    #page_title {
+        font-size: 8vw;
+    }
+
+    #menu {
+        font-size: 8vw;
+        width: 75%;
+        margin-top: 35%;
+    }
+
+    #menu div {
+        border: 3px solid var(--theme_color_solid);
+        background-color:  var(--theme_color_solid);
+    }
+
+    .section_p {
+        margin: 0 5% 0 5%;
+        color: var(--color_text);
+    }
+  
+    #hobbies {
+        margin: 0;
+        text-align: center;
+        color: var(--color_text);
+    }
+  
+    h3 {
+        font-size: 6vw;
+        margin: 5%
+    }
+  
+    #faq_list p, #faq_list h2, 
+    #hobbies, .section_p  {
+        font-size: 3.7vw;
+    }
+
+    #btn-back-to-top {
+        bottom: 20px;
+        right: 20px;
+        cursor: pointer; 
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 3vw;
+    }
+
+    #skills ul {
+        margin-right: 5%;
+    }
+    
+    #skills li {
+        height: 7.25vh;
+    }
+
+    #page_title {
+        -webkit-text-stroke: var(--theme_color_solid);
+        -webkit-text-fill-color: var(--theme_color_solid);
+    }
+}
+
+@media only screen and (min-width: 500px) and (orientation: portrait) {
+    #skills > img, #about_me > img {
+      display: none;
+    }
+
+    #my_name {
+        font-size: 10vw;
+        margin-top: 12.5%;
+    }
+
+    #page_title {
+        font-size: 8vw;
+    }
+
+    #menu {
+        font-size: 5vw;
+        width: 50%;
+        margin-top: 15%;
+    }
+
+    #menu div {
+        border: 3px solid var(--theme_color_solid);
+        background-color:  var(--theme_color_solid);
+    }
+
+    .section_p {
+        margin: 0 5% 0 5%;
+        color: var(--color_text);
+    }
+  
+    #hobbies {
+        margin: 0;
+        text-align: center;
+        color: var(--color_text);
+    }
+  
+    h3 {
+        font-size: 6vw;
+        margin: 5%
+    }
+  
+    #faq_list p, #faq_list h2, 
+    #hobbies, .section_p  {
+        font-size: 2.5vw;
+    }
+
+    #btn-back-to-top {
+        bottom: 20px;
+        right: 20px;
+        cursor: pointer; 
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 3vw;
+    }
+
+    #skills ul {
+        margin-right: 5%;
+    }
+    
+    #skills li {
+        height: 8vh;
+    }
+
+    #page_title {
+        -webkit-text-stroke: var(--theme_color_solid);
+        -webkit-text-fill-color: var(--theme_color_solid);
+    }
+}
+
+
