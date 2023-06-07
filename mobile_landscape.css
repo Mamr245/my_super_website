@@ -1,8 +1,10 @@
 /*This file contains the css code to make 
 the webpage reactive to different screen sizes 
-for mobile devices in landscape mode 
+for mobile devices in landscape mode */
 
-@media screen and (max-width: 700px) and (orientation: landscape) {
+@media only screen and (max-width: 700px) 
+and (orientation: landscape) 
+and (hover: none) {
     #skills > img, #about_me > img,
      #skills, #about_me {
         height: 100vh;
@@ -47,7 +49,9 @@ for mobile devices in landscape mode
     }
 }
 
-@media screen and (min-width: 701px) and (max-width: 1000px) and (orientation: landscape) {
+@media only screen and (min-width: 701px) 
+and (orientation: landscape) 
+and (hover: none) {
     #skills > img, #about_me > img,
      #skills, #about_me {
         height: 100vh;
@@ -92,7 +96,10 @@ for mobile devices in landscape mode
     }
 }
 
-@media screen and (min-width: 1001px) and (max-width: 1400px) and (orientation: landscape) {
+@media only screen and (min-width: 1001px) 
+and (max-width: 1400px) 
+and (orientation: landscape) 
+and (hover: none) {
 
     #faq_list p, #faq_list h2, 
     #hobbies, .section_p  {
@@ -120,6 +127,4 @@ for mobile devices in landscape mode
         margin-top: 11%;
     }
 }
-
-*/
 

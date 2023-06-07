@@ -2,9 +2,16 @@
 the webpage reactive to different screen sizes 
 for mobile devices in portrait mode */
 
-@media only screen and (max-width: 375px) and (orientation: portrait) {
+@media only screen and (max-width: 375px) 
+and (orientation: portrait) 
+and (hover: none) {
     #skills > img, #about_me > img {
       display: none;
+    }
+
+    #menu div:hover {
+        background-color: var(--theme_color_transparent);
+        transition: unset;
     }
 
     #my_name {
@@ -61,7 +68,9 @@ for mobile devices in portrait mode */
     }
 }
 
-@media only screen and (min-width: 376px) and (orientation: portrait) {
+@media only screen and (min-width: 376px) 
+and (orientation: portrait) 
+and (hover: none) {
     #skills > img, #about_me > img {
       display: none;
     }
@@ -124,7 +133,9 @@ for mobile devices in portrait mode */
     }
 }
 
-@media only screen and (min-width: 500px) and (orientation: portrait) {
+@media only screen and (min-width: 500px) 
+and (orientation: portrait) 
+and (hover: none) {
     #skills > img, #about_me > img {
       display: none;
     }
@@ -183,7 +194,10 @@ for mobile devices in portrait mode */
     }
 }
 
-@media only screen and (min-width: 650px) and (orientation: portrait) {
+@media only screen and (min-width: 650px) 
+and (min-height: 1000px) 
+and (orientation: portrait) 
+and (hover: none) {
     #skills > img, #about_me > img {
       display: none;
     }
@@ -221,16 +235,7 @@ for mobile devices in portrait mode */
   
     #faq_list p, #faq_list h2, 
     #hobbies, .section_p  {
-        font-size: 2vw;
-    }
-
-    #btn-back-to-top {
-        bottom: 20px;
-        right: 20px;
-        cursor: pointer; 
-        padding: 5px;
-        border-radius: 5px;
-        font-size: 3vw;
+        font-size: 2.75vw;
     }
 
     #skills ul {

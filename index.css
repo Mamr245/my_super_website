@@ -5,34 +5,43 @@ Designed with Full HD resolution
 /* Variables */
 :root {
     --border: 2px solid #444;
+    --color_text: #444;
+    --color_titles: black;
+    --min_section_height: 500px;
     --otaku: Otaku;
+    --section-font-size: 20px;
+    --section_height: 50vh;
+    --section_image_margin: 2.5%;
     --theme_color_solid: #FF9912;
     --theme_color_transparent: #FF991250;
-    --color_titles: black;
-    --color_text: #444;
+    --text_font: Arial, Helvetica, sans-serif;
+    --welcome_screen_min_width: 300px;  
+    
 }
 
 /* Box sizing and scroll behavior properties*/
 * {
-	box-sizing: border-box;
-    scroll-behavior: smooth;
- }
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
-/* Make body fill the entire screen */
+/* Make body fill the entire screen 
+and limit its max size */
 body {
   margin: 0;
   padding: 0;
   max-width: 1920px;
   max-height: 1080px;
-  min-width: 300px;
-  min-height: 500px;
-
+  min-width: var(--welcome_screen_min_width);
 }
 
 /* Welcomer screen properties:
 What the user sees as soon as he lands on the page */
 #welcome_screen {
   height: 100vh;
+  max-width: 1920px;
+  max-height: 1080px;
+  min-width: var(--welcome_screen_min_width);
   background-image: url('images/background.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -71,9 +80,9 @@ under my name */
 /* Properties for the menu and its options */
 #menu {
     font-family: var(--otaku);
-    width: 30%;
+    width: 700px;
     margin: auto;
-    margin-top: 6%;
+    margin-top: 100px;
     font-size: 40px;
     text-align: center;
     animation: fadeInAnimation ease 5s;
@@ -87,7 +96,7 @@ under my name */
     line-height: 50px;
     text-align: center;
     border: 3px solid var(--theme_color_solid);
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     background-color:  var(--theme_color_transparent);
 }
 
@@ -110,25 +119,28 @@ a, a:visited {
 
 /* Properties for the "About me" and "Skills" section. */
 #about_me, #skills {
-    height: 50vh;
+    height: var(--section_height);
+    min-height: var(--min_section_height);
     background-color: white;
     border-bottom: var(--border);
 }
 
 #about_me img {
     float: left;
-    height: 50vh;
-    margin-right: 2.5%;
     clear: both;
+    height: var(--section_height);
+    min-height: var(--min_section_height);
+    margin-right: var(--section_image_margin);
     border-bottom: var(--border);
     border-right: var(--border);
 }
 
 #skills img {
     float: right;
-    height: 50vh;
-    margin-left: 2.5%;
     clear: both;
+    height: var(--section_height);
+    min-height: var(--min_section_height);
+    margin-left: var(--section_image_margin);
     border-bottom: var(--border);
     border-left: var(--border);
 }
@@ -140,56 +152,55 @@ a, a:visited {
     margin: auto;
 }
 
-/* Styling of hobbies list */
-#hobbies {
-    list-style-type: none; 
-    padding: 0; 
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.1vw /*20px*/;
-    text-indent: 5%;
-    color: var(--color_text);
-}
-
 /* Section title and text properties*/
 h3 {
-    text-align: center;
     font-family: var(--otaku);
-    font-size: 3vw /*50px*/;
+    text-align: center;
+    font-size: 50px;
     margin-top: 0;
     margin-bottom: 1%;
     padding-top: 1%;
 }
 
 .section_p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.1vw /*20px*/;
+    color: var(--color_text);
+    font-family: var(--text_font);
+    font-size: var(--section-font-size);
     margin-top: 0;
     margin-bottom: 0%;
     margin-right: 5%;
     margin-left: 27.5%;
-    color: var(--color_text);
+}
+
+/* Styling of hobbies list */
+#hobbies {
+  font-family: var(--text_font);;
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0;
+  font-size: var(--section-font-size);
+  text-indent: 5%;
+  color: var(--color_text);
 }
 
 /* Back to top button properties */
 #btn-back-to-top {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
     display: none;
-    position: fixed;
-    z-index: 99;
     border: none;
     outline: none;
-    background-color: var(--theme_color_solid);
     color: white;
     cursor: pointer; 
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
     padding: 15px;
     border-radius: 10px;
     font-size: 18px;
     animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    background-color: var(--theme_color_solid);
 }
 
 /* Accordion design and properties. 
@@ -222,8 +233,8 @@ section.faq_list {
 
 #faq_list h2 {
   color: var(--theme_color_solid);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.25vw /*24px*/;
+  font-family: var(--text_font);
+  font-size: 24px;
   line-height: 24px;
   text-align: left;
   padding: 15px 15px 0;
@@ -239,8 +250,8 @@ section.faq_list {
 #faq_list p {
   color: var(--color_text);
   text-align: left;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1vw /*18px*/;
+  font-family: var(--text_font);
+  font-size: 18px;
   line-height: 1.45;
   position: relative;
   overflow: hidden;
@@ -340,7 +351,7 @@ section.faq_list {
   font-weight: bold;
 }
 
-/* Skills images properties, using flex */
+/* Skills' images properties, using flex */
 #skills ul {
   list-style-type: none; 
   display: flex;
@@ -350,7 +361,7 @@ section.faq_list {
 }
 
 #skills li {
-  height: 10vh;
+  height: 95px;
   flex-grow: 1;
 }
 
@@ -358,9 +369,10 @@ section.faq_list {
   flex-grow: 9;
 }
 
-#skills > ul img {
+#skills > ul > li > img  {
   max-height: 100%;
   min-width: 100%;
+  min-height: unset;
   object-fit: contain;
   vertical-align: bottom;
   border: none;
@@ -392,11 +404,3 @@ section.faq_list {
     }
 }
 
-/* Change menu options background color 
-if device is touchscreen and has small size */
-@media (hover: none) and (max-width: 500px) {
-  #menu div {
-    border: 3px solid var(--theme_color_solid);
-    background-color: var(--theme_color_solid);
-  }
-}
