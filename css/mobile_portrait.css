@@ -2,11 +2,89 @@
 the webpage reactive to different screen sizes 
 for mobile devices in portrait mode */
 
-@media only screen and (max-width: 375px) 
+@media only screen and (max-width: 300px) 
 and (orientation: portrait) 
 and (hover: none) {
     #skills > img, #about_me > img {
       display: none;
+    }
+
+    body, #welcome_screen {
+        min-width: unset;
+    }
+
+    #about_me, #skills {
+        height: 50vh;
+        min-height: unset;
+    }
+
+    #menu div:hover {
+        background-color: var(--theme_color_transparent);
+        transition: unset;
+    }
+
+    #my_name {
+        font-size: 10vw;
+        margin-top: 12.5%;
+    }
+
+    #page_title {
+        font-size: 9vw;
+    }
+
+    #menu {
+        font-size: 8vw;
+        width: 75%;
+        margin-top: 27.5%;
+    }
+
+    .section_p {
+        margin: 0 5% 0 5%;
+        color: var(--color_text);
+    }
+
+    .section_p:last-of-type {
+        margin-bottom: 2.5%;
+    }
+  
+    #hobbies {
+        margin: 0;
+        text-align: center;
+        color: var(--color_text);
+    }
+  
+    h3 {
+        font-size: 6vw;
+        margin: 5%
+    }
+   
+    #hobbies, .section_p,
+    #faq_list p, #faq_list h2 {
+        font-size: 3.75vw;
+    }
+
+    #skills ul {
+        margin-right: 5%;
+    }
+    
+    #skills li {
+        height: 6.5vh;
+    }
+
+    #faq_list h2 {
+        padding: 15px 30px 0 10px;
+    }
+}
+
+@media only screen and (min-width: 301px) 
+and (orientation: portrait) 
+and (hover: none) {
+    #skills > img, #about_me > img {
+      display: none;
+    }
+
+    #about_me, #skills {
+        min-height: unset;
     }
 
     #menu div:hover {
@@ -50,15 +128,6 @@ and (hover: none) {
         font-size: 11px;
     }
 
-    #btn-back-to-top {
-        bottom: 20px;
-        right: 20px;
-        cursor: pointer; 
-        padding: 5px;
-        border-radius: 5px;
-        font-size: 3vw;
-    }
-
     #skills ul {
         margin-right: 5%;
     }
@@ -75,6 +144,14 @@ and (hover: none) {
       display: none;
     }
 
+    #about_me, #skills {
+        min-height: unset;
+    }
+
+    #menu div:hover {
+        background-color: var(--theme_color_transparent);
+        transition: unset;
+    }
     #my_name {
         font-size: 10vw;
         margin-top: 20%;
@@ -115,15 +192,6 @@ and (hover: none) {
         padding: 15px 25px 0 15px;
     }
 
-    #btn-back-to-top {
-        bottom: 20px;
-        right: 20px;
-        cursor: pointer; 
-        padding: 5px;
-        border-radius: 5px;
-        font-size: 3vw;
-    }
-
     #skills ul {
         margin-right: 5%;
     }
@@ -138,6 +206,15 @@ and (orientation: portrait)
 and (hover: none) {
     #skills > img, #about_me > img {
       display: none;
+    }
+
+    #about_me, #skills {
+        min-height: unset;
+    }
+
+    #menu div:hover {
+        background-color: var(--theme_color_transparent);
+        transition: unset;
     }
 
     #my_name {
@@ -176,15 +253,6 @@ and (hover: none) {
         font-size: 2.5vw;
     }
 
-    #btn-back-to-top {
-        bottom: 20px;
-        right: 20px;
-        cursor: pointer; 
-        padding: 5px;
-        border-radius: 5px;
-        font-size: 3vw;
-    }
-
     #skills ul {
         margin-right: 5%;
     }
@@ -195,13 +263,24 @@ and (hover: none) {
 }
 
 @media only screen and (min-width: 650px) 
-and (min-height: 1000px) 
 and (orientation: portrait) 
 and (hover: none) {
     #skills > img, #about_me > img {
       display: none;
     }
 
+    #about_me, #skills {
+        min-height: unset;
+    }
+
+    #welcome_screen  {
+        max-height: unset;
+    }
+
+    #menu div:hover {
+        background-color: var(--theme_color_transparent);
+        transition: unset;
+    }
     #my_name {
         font-size: 10vw;
         margin-top: 12.5%;
@@ -246,7 +325,3 @@ and (hover: none) {
         height: 8vh;
     }
 }
-
-
-
-

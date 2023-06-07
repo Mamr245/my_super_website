@@ -1,7 +1,7 @@
 /*This file contains the css code to make 
 the webpage reactive to different browser window sizes */
 
-@media only screen and (max-width: 700px)  {
+@media only screen and (max-width: 700px) and (hover: hover)  {
     #skills > img, #about_me > img {
       display: none;
     }
@@ -71,7 +71,7 @@ the webpage reactive to different browser window sizes */
     }
 }
 
-@media only screen and (min-width: 701px)  and (max-width: 899px) {
+@media only screen and (min-width: 701px)  and (max-width: 899px) and (hover: hover) {
     #skills > img, #about_me > img {
       display: none;
     }
@@ -141,7 +141,7 @@ the webpage reactive to different browser window sizes */
     }
 }
 
-@media only screen and (min-width: 900px) and (max-width: 1350px)  {
+@media only screen and (min-width: 900px) and (max-width: 1350px) and (hover: hover)  {
     #skills > img, #about_me > img {
       display: none;
     }
@@ -196,13 +196,3 @@ the webpage reactive to different browser window sizes */
         height: 85px;
     }
 }
-
-
-
-
-
-
-
-
-
-

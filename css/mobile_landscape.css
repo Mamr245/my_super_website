@@ -1,0 +1,204 @@
+/*This file contains the css code to make 
+the webpage reactive to different screen sizes 
+for mobile devices in landscape mode */
+
+@media only screen and (max-height: 300px) 
+and (orientation: landscape) 
+and (hover: none) {
+    #skills > img, #about_me > img,
+     #skills, #about_me, #welcome_screen  {
+        min-height: unset;
+        height: 100vh;
+    }
+
+    #menu div:hover {
+        background-color: var(--theme_color_transparent);
+        transition: unset;
+    }
+
+    #faq_list {
+        max-width: 90%; }
+
+    
+    #hobbies, .section_p  {
+        font-size: 1.6vw;
+    }
+
+    h3 {
+        font-size: 4vw;  
+    }
+
+    #faq_list h2, #faq_list p {
+        font-size: 2.5vw;
+    }
+
+    #skills li {
+        height: 14vh;
+    }
+    
+    #my_name {
+        font-size: 7vw;
+    }
+
+    #page_title {
+        font-size: 5vw;
+    }
+
+    #menu {
+        max-width: 200px; 
+        font-size: 2.75vw;
+        margin-top: 2.5%;
+    }
+
+    #menu div {
+        height: 35px;
+        line-height: 35px;
+    }
+}
+
+@media only screen and (min-height: 301px) 
+and (orientation: landscape) 
+and (hover: none) {
+    #skills > img, #about_me > img,
+     #skills, #about_me, #welcome_screen  {
+        min-height: unset;
+        height: 100vh;
+    }
+
+    #menu div:hover {
+        background-color: var(--theme_color_transparent);
+        transition: unset;
+    }
+
+    #faq_list {
+        max-width: 90%; }
+
+    
+    #hobbies, .section_p  {
+        font-size: 1.6vw;
+    }
+
+    h3 {
+        font-size: 4vw;  
+    }
+
+    #faq_list h2, #faq_list p {
+        font-size: 2.5vw;
+    }
+
+    #skills li {
+        height: 12vh;
+    }
+    
+    #my_name {
+        font-size: 7vw;
+    }
+
+    #page_title {
+        font-size: 5vw;
+    }
+
+    #menu {
+        max-width: 300px; 
+        font-size: 4vw;
+        margin-top: 3.5%;
+    }
+}
+
+@media only screen and (min-height: 400px) 
+and (orientation: landscape) 
+and (hover: none) {
+    #skills > img, #about_me > img,
+     #skills, #about_me, #welcome_screen  {
+        min-height: unset;
+        height: 100vh;
+    }
+
+    #menu div:hover {
+        background-color: var(--theme_color_transparent);
+        transition: unset;
+    }
+
+    #faq_list {
+        max-width: 90%; }
+
+    
+    #hobbies, .section_p  {
+        font-size: 1.6vw;
+    }
+
+    h3 {
+        font-size: 4vw;  
+    }
+
+    #faq_list h2, #faq_list p {
+        font-size: 2.5vw;
+    }
+
+    #skills li {
+        height: 12vh;
+    }
+    
+    #my_name {
+        font-size: 7vw;
+    }
+
+    #page_title {
+        font-size: 5vw;
+    }
+
+    #menu {
+        max-width: 300px; 
+        font-size: 4vw;
+        margin-top: 3.5%;
+    }
+}
+
+@media only screen and (min-height: 750px)
+and (orientation: landscape) 
+and (hover: none) {
+
+    #skills > img, #about_me > img,
+     #skills, #about_me  {
+        min-height: unset;
+        height: 50vh;
+    }
+
+    #faq_list {
+        max-width: 90%; }
+ 
+    #hobbies, .section_p  {
+        font-size: 1.4vw;
+    }
+
+    #faq_list h2, #faq_list p {
+        font-size: 1.75vw;
+    }
+
+    #menu div:hover {
+        background-color: var(--theme_color_transparent);
+        transition: unset;
+    }
+
+    h3 {
+        font-size: 4vw;  
+    }
+
+    #skills li {
+        height: 8.75vh;
+    }
+    
+    #my_name {
+        font-size: 7vw;
+    }
+
+    #page_title {
+        font-size: 5vw;
+    }
+
+    #menu {
+        max-width: 500px;
+        font-size: 3vw;
+        margin-top: 5%;
+    }
+}

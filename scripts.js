@@ -17,7 +17,7 @@ function scrollFunction() {
   else {
     mybutton.style.display = "none";
   }
-  if (window.innerWidth < 1000) {
+  if (window.innerWidth < 1500) {
     mybutton.style.display = "none";
   }
 }
