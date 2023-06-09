@@ -47,12 +47,21 @@ and (hover: none) {
     #menu {
         max-width: 200px; 
         font-size: 2.75vw;
-        margin-top: 2.5%;
+        margin-top: 1%;
     }
 
     #menu div {
-        height: 35px;
-        line-height: 35px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 5px;
+    }
+
+    .social_media {
+        font-size: 25px !important;
+    }
+
+    .fa_custom {
+        margin-right: 1%;
     }
 }
 
@@ -101,7 +110,16 @@ and (hover: none) {
     #menu {
         max-width: 300px; 
         font-size: 4vw;
-        margin-top: 3.5%;
+        margin-top: 5%;
+    }
+
+    #menu div {
+        height: 35px;
+        line-height: 35px
+    }
+
+    .social_media {
+        font-size: 35px !important;
     }
 }
 
@@ -149,8 +167,17 @@ and (hover: none) {
 
     #menu {
         max-width: 300px; 
-        font-size: 4vw;
+        font-size: 3.5vw;
         margin-top: 3.5%;
+    }
+
+    #menu div {
+        height: 40px;
+        line-height: 40px
+    }
+
+    .social_media {
+        font-size: 35px !important;
     }
 }
 
@@ -200,5 +227,14 @@ and (hover: none) {
         max-width: 500px;
         font-size: 3vw;
         margin-top: 5%;
+    }
+
+    #menu div {
+        height: 60px;
+        line-height: 60px
+    }
+
+    .social_media {
+        font-size: 50px !important;
     }
 }

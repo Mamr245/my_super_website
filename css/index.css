@@ -350,6 +350,7 @@ section.faq_list {
   flex-wrap: wrap;
   gap: calc(15px + 10%) ;
   margin-top: 3.5%;
+  padding: 0 20px 0 20px;
 }
 
 #skills li {
@@ -369,6 +370,12 @@ section.faq_list {
   vertical-align: bottom;
   border: none;
   border-radius: 5px;
+}
+
+
+/*Social media icons properties*/
+.fa_custom {
+  margin-right: 10px;
 }
 
 /* Fade in animation
@@ -396,11 +403,6 @@ section.faq_list {
     }
 }
 
-
-
-.fa_custom {
-  margin-right: 10px;
-}
 
 
 

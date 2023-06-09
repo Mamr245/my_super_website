@@ -62,10 +62,6 @@ and (hover: none) {
     #faq_list p, #faq_list h2 {
         font-size: 3.75vw;
     }
-
-    #skills ul {
-        margin-right: 5%;
-    }
     
     #skills li {
         height: 6.5vh;
@@ -73,6 +69,14 @@ and (hover: none) {
 
     #faq_list h2 {
         padding: 15px 30px 0 10px;
+    }
+
+    .social_media {
+        font-size: 35px !important;
+    }
+
+    .fa_custom {
+        margin-right: 1%;
     }
 }
 
@@ -127,13 +131,13 @@ and (hover: none) {
     #hobbies, .section_p  {
         font-size: 11px;
     }
-
-    #skills ul {
-        margin-right: 5%;
-    }
     
     #skills li {
         height: 7.5vh;
+    }
+
+    .social_media {
+        font-size: 40px !important;
     }
 }
 
@@ -190,10 +194,6 @@ and (hover: none) {
     
     #faq_list h2 {
         padding: 15px 25px 0 15px;
-    }
-
-    #skills ul {
-        margin-right: 5%;
     }
     
     #skills li {
@@ -253,12 +253,11 @@ and (hover: none) {
         font-size: 2.5vw;
     }
 
-    #skills ul {
-        margin-right: 5%;
-    }
-    
     #skills li {
         height: 8vh;
+    }
+    .social_media {
+        font-size: 40px !important;
     }
 }
 
@@ -291,7 +290,71 @@ and (hover: none) {
     }
 
     #menu {
-        font-size: 5vw;
+        font-size: 4.5vw;
+        width: 50%;
+        margin-top: 15%;
+    }
+
+    .section_p {
+        margin: 0 5% 0 5%;
+        color: var(--color_text);
+    }
+  
+    #hobbies {
+        margin: 0;
+        text-align: center;
+        color: var(--color_text);
+    }
+  
+    h3 {
+        font-size: 4vw;
+        margin: 5%
+    }
+  
+    #faq_list p, #faq_list h2, 
+    #hobbies, .section_p  {
+        font-size: 2.75vw;
+    }
+    
+    #skills li {
+        height: 8vh;
+    }
+
+    .social_media {
+        font-size: 50px !important;
+    }
+}
+
+@media only screen and (min-width: 900px) 
+and (orientation: portrait) 
+and (hover: none) {
+    #skills > img, #about_me > img {
+      display: none;
+    }
+
+    #about_me, #skills {
+        min-height: unset;
+    }
+
+    #welcome_screen  {
+        max-height: unset;
+    }
+
+    #menu div:hover {
+        background-color: var(--theme_color_transparent);
+        transition: unset;
+    }
+    #my_name {
+        font-size: 10vw;
+        margin-top: 12.5%;
+    }
+
+    #page_title {
+        font-size: 9vw;
+    }
+
+    #menu {
+        font-size: 4.5vw;
         width: 50%;
         margin-top: 15%;
     }
@@ -317,11 +380,22 @@ and (hover: none) {
         font-size: 2.75vw;
     }
 
-    #skills ul {
-        margin-right: 5%;
-    }
-    
     #skills li {
         height: 8vh;
     }
+
+    .social_media {
+        font-size: 55px !important;
+    }
+
+    #menu div {
+        height: 60px;
+        line-height: 60px
+    }
+    
+    .social_media {
+        font-size: 60px !important;
+    }
 }
+
+
