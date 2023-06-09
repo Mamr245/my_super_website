@@ -69,9 +69,13 @@ the webpage reactive to different browser window sizes */
     #skills li {
         height: 75px;
     }
+
+    .social_media {
+        font-size: 40px !important;
+    }
 }
 
-@media only screen and (min-width: 701px)  and (max-width: 899px) and (hover: hover) {
+@media only screen and (min-width: 701px)  and (max-width: 949px) and (hover: hover) {
     #skills > img, #about_me > img {
       display: none;
     }
@@ -139,9 +143,13 @@ the webpage reactive to different browser window sizes */
     #skills li {
         height: 75px;
     }
+
+    .social_media {
+        font-size: 40px !important;
+    }
 }
 
-@media only screen and (min-width: 900px) and (max-width: 1350px) and (hover: hover)  {
+@media only screen and (min-width: 950px) and (max-width: 1400px) and (hover: hover)  {
     #skills > img, #about_me > img {
       display: none;
     }

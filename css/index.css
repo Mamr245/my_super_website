@@ -66,7 +66,7 @@ under my name */
     font-family: var(--otaku);
     width: 700px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 75px;
     font-size: 40px;
     text-align: center;
     animation: fadeInAnimation ease 5s;
@@ -82,6 +82,14 @@ under my name */
     border: 3px solid var(--theme_color_solid);
     margin-bottom: 5%;
     background-color:  var(--theme_color_transparent);
+}
+
+.social_media {
+  text-align: right !important;
+  background-color: unset !important;
+  border: unset !important;
+  margin-bottom: 2% !important;
+  font-size: 48px !important;
 }
 
 /* Properties for the when the user hovers 
@@ -387,4 +395,12 @@ section.faq_list {
         -webkit-text-fill-color: var(--theme_color_solid);
     }
 }
+
+
+
+.fa_custom {
+  margin-right: 10px;
+}
+
+
 
