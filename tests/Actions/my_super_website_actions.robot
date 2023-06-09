@@ -20,21 +20,40 @@ Validate Back to Top Button
     Click button                        ${BUTTON_BACK_TO_TOP}
     Wait until element is not visible   ${BUTTON_BACK_TO_TOP}   5
 
-Validate page links to LinkedIn
+Validate links to LinkedIn page
+    Click element                       ${I_LINKEDIN}
+    # Switch tabs, verify url, close tab, switch to original tab 
+    ${handles} =  Get Window Handles
+    Switch Window   ${handles}[1]
+    Location should contain     linkedin
+    Close window
+    Switch Window   ${handles}[0]
+    # Same process but first go the link at the bottom of the page
     Click element                       ${DIV_FAQ}
-    Wait until element is visible       ${LI_FIND_OUT_MIGUEL}
-    Click element                       ${LI_FIND_OUT_MIGUEL}
+    Wait until element is visible       ${LI_FIND_ABOUT_MIGUEL}
+    Click element                       ${LI_FIND_ABOUT_MIGUEL}
     Click element                       ${A_LINKEDIN}
     ${handles} =  Get Window Handles
     Switch Window   ${handles}[1]
-    Location should contain     Linkedin
+    Location should contain     linkedin
     Close window
     Switch Window   ${handles}[0]
 
+Validate link to GitHub page
+    Click button                        ${BUTTON_BACK_TO_TOP}
+    Click element                       ${I_GITHUB}
+    ${handles} =  Get Window Handles
+    Switch Window   ${handles}[1]
+    Location should contain     github
+
 Validate size responsiveness of page
+    # Validate if the website is responsive
     Set window size     500     500
     Element should not be visible   ${IMG_SKILLS}
     Element should not be visible   ${IMG_ABOUT_ME}
+    Set window size     1500     500
+    Element should be visible       ${IMG_SKILLS}
+    Element should be visible       ${IMG_ABOUT_ME}
 
 
 

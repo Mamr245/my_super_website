@@ -5,14 +5,9 @@ Resource         ../Actions/my_super_website_actions.robot
 
 *** Test Cases ***
 MSW - Overall WebSite Checkup
-    [Tags]    FinalChallenge    E2E
+    [Tags]    Checkup
     Open Browser and Load Site
     Validate Back to Top Button
-    Validate page links to LinkedIn
+    Validate links to LinkedIn page
+    Validate link to GitHub page
     Validate size responsiveness of page
-#    Check Report
-#    Search Database
-#    Add Costumer
-#    Manage Costumer
-#    Delete Costumer
-#    Logout
