@@ -63,6 +63,7 @@ Validate size responsiveness of page
     Set window size     1500     500
     Element should be visible       ${IMG_SKILLS}
     Element should be visible       ${IMG_ABOUT_ME}
+    Close All Browsers
 
 
 
