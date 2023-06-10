@@ -2,7 +2,7 @@
 
 ### :question: Why?
 Lots of people fill their professional profiles with plenty of certificates.
-More certificates make your more employable, right? The answer is not so straightforward. 
+More certificates make your more employable right? The answer is not so straightforward. 
 What use are the certifications if you don't apply what you learn into making something new?
 This is where this repository comes in! 
 
@@ -29,6 +29,6 @@ The webpage is very simple. Content wise, it contains:
 `VSCode` `PyCharm`
 
 ### :speech_balloon: Have any suggestions or have found any issue? 
-Feel free to tell me about them! I'm always looking to improve!
+Feel free to tell me about them :speech_balloon: I'm always looking to improve!
 
-<h1 align="center">Thanks for coming! :relaxed:</h1>
+<h2 align="center">Thanks for coming! :relaxed:</h1>
