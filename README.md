@@ -1,3 +1,4 @@
+![A preview of my website](/images/sample.png "Small preview")
 <h1 align="center">My Super Website! :rocket:</h1> 
 
 ### :question: Why?
@@ -17,7 +18,7 @@ The webpage is very simple. Content wise, it contains:
 - A section where I "flex" some of my tech skills.
 - A "Frequently Asked Questions" section where you can check what I am up to!
 
- Additonally: 
+ Additionally: 
 
 - Tried to make it responsive to different screen sizes.
 - Tried to make it interactive with some clickable buttons. 

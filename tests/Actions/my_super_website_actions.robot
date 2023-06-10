@@ -64,7 +64,3 @@ Validate size responsiveness of page
     Element should be visible       ${IMG_SKILLS}
     Element should be visible       ${IMG_ABOUT_ME}
     Close All Browsers
-
-
-
-
