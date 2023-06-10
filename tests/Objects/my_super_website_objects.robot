@@ -6,6 +6,9 @@ Library          SeleniumLibrary
 
 
 *** Variables ***
+### Speed Settings ###
+${CUSTOM_SPEED} =    0.5 seconds
+
 ### Browser Settings ###
 ${BROWSER} =                chrome
 &{BROWSER_PREFS} =          autofill.profile_enabled=${False}       credentials_enable_service=${False}     profile.password_manager_enabled=${False}
@@ -28,6 +31,7 @@ ${LI_FIND_ABOUT_MIGUEL} =     //h2[contains(text(), "find out more about Miguel?
 
 ### Data to use in the test ###
 ${URL} =    http://127.0.0.1:5500/my_super_website/index.html
+# ${URL} =    https://www.miguelamrodrigues.com
 
 
 

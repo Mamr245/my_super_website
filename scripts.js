@@ -17,6 +17,7 @@ function scrollFunction() {
   else {
     mybutton.style.display = "none";
   }
+  // If window width is less than a specified threshold, do not show the button
   if (window.innerWidth < 1300) {
     mybutton.style.display = "none";
   }

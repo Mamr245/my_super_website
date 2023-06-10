@@ -84,6 +84,7 @@ under my name */
     background-color:  var(--theme_color_transparent);
 }
 
+/*Social media icons container properties*/
 .social_media {
   text-align: right !important;
   background-color: unset !important;
@@ -92,7 +93,12 @@ under my name */
   font-size: 48px !important;
 }
 
-/* Properties for the when the user hovers 
+/*Social media icons properties*/
+.fa_custom {
+  margin-right: 10px;
+}
+
+/* Properties for when the user hovers 
 the mouse on one of the menu's options */
 #menu div:hover {
     background-color: var(--theme_color_solid);
@@ -337,7 +343,8 @@ section.faq_list {
   transform: translate(-2px, 0) rotate(-45deg);
 }
 
-/* Linkedin link properties */
+/* Linkedin link properties 
+The orange "here" in one of the accordion's answers */
 #LinkedIn {
   color: var(--theme_color_solid);
   font-weight: bold;
@@ -370,12 +377,6 @@ section.faq_list {
   vertical-align: bottom;
   border: none;
   border-radius: 5px;
-}
-
-
-/*Social media icons properties*/
-.fa_custom {
-  margin-right: 10px;
 }
 
 /* Fade in animation

@@ -1,5 +1,6 @@
 /*This file contains the css code to make 
-the webpage reactive to different browser window sizes */
+the webpage reactive to different browser window sizes 
+on desktop computers */
 
 @media only screen and (max-width: 700px) and (hover: hover)  {
     #skills > img, #about_me > img {
