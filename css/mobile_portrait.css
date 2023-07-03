@@ -16,6 +16,8 @@ and (hover: none) {
     #about_me, #skills {
         height: 50vh;
         min-height: unset;
+        height: unset;
+        border: unset
     }
 
     #menu div:hover {
@@ -87,8 +89,10 @@ and (hover: none) {
       display: none;
     }
 
-    #about_me, #skills {
+    #about_me, #skills, #faq {
         min-height: unset;
+        height: unset;
+        border: unset;
     }
 
     #menu div:hover {
@@ -115,7 +119,7 @@ and (hover: none) {
         margin: 0 5% 0 5%;
         color: var(--color_text);
     }
-  
+
     #hobbies {
         margin: 0;
         text-align: center;
@@ -129,7 +133,7 @@ and (hover: none) {
   
     #faq_list p, #faq_list h2, 
     #hobbies, .section_p  {
-        font-size: 11px;
+        font-size: 12px;
     }
     
     #skills li {
@@ -148,7 +152,7 @@ and (hover: none) {
       display: none;
     }
 
-    #about_me, #skills {
+    #about_me, #skills, #faq {
         min-height: unset;
     }
 
@@ -189,7 +193,7 @@ and (hover: none) {
   
     #faq_list p, #faq_list h2, 
     #hobbies, .section_p  {
-        font-size: 3.7vw;
+        font-size: 12px;
     }
     
     #faq_list h2 {
@@ -244,7 +248,7 @@ and (hover: none) {
     }
   
     h3 {
-        font-size: 6vw;
+        font-size: 26px;
         margin: 5%
     }
   

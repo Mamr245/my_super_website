@@ -367,6 +367,7 @@ The orange "here" in one of the accordion's answers */
 
 #skills li:last-child {
   flex-grow: 9;
+  height: 0;
 }
 
 #skills > ul > li > img  {
