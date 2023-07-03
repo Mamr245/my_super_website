@@ -20,14 +20,17 @@ The webpage is very simple. Content wise, it contains:
 
  Additionally: 
 
-- Tried to make it responsive to different screen sizes.
-- Tried to make it interactive with some clickable buttons. 
+- Made it responsive to different screen sizes.
+- Made it interactive with some clickable buttons. 
 - Created automated tests to perform an overall checkup of its content and funcionalities. 
 
 ### :hammer: Used Technologies
 `HTML5` `CSS3` `JavaScript`
 `Robot Framework` `Selenium`
 `VSCode` `PyCharm`
+
+### 🖱️ How can I check it? 
+You can access the website by clicking the following URL 👉 https://miguelrodrigues.onrender.com/
 
 ### :speech_balloon: Have any suggestions or have found any issue? 
 Feel free to tell me about them :speech_balloon: I'm always looking to improve!
