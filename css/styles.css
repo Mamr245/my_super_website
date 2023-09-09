@@ -1,0 +1,1284 @@
+/* Variables */
+:root {
+    --border: 2px solid #444;
+    --color_text: #444;
+    --color_titles: black;
+    --max-width: 1920px;
+    --max-height: 1080px;
+    --min_section_height: 450px;
+    --otaku: Otaku, Arial, Helvetica, sans-serif;
+    --section-font-size: 20px;
+    --section_height: 50vh;
+    --section_image_margin: 2.5%;
+    --theme_color_solid: #FF9912;
+    --theme_color_transparent: #FF991250;
+    --text_font: Arial, Helvetica, sans-serif;
+    --welcome_screen_min_width: 300px;   
+}
+
+/* Box sizing and scroll behavior properties*/
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Make body fill the entire screen 
+and limit its max size */
+body {
+    margin: 0;
+    padding: 0;
+    max-width: var(--max-width);
+    /*max-height: var(--max-height); */
+    min-width: var(--welcome_screen_min_width);
+}
+
+/* Welcomer screen properties:
+What the user sees as soon as he lands on the page */
+#welcome_screen {
+    height: 100vh;
+    min-height: 600px; 
+    max-width: var(--max-width);
+    /*max-height: var(--max-height); */
+    min-width: var(--welcome_screen_min_width);
+    background-image: url('../images/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+    overflow:auto;
+    border-bottom: var(--border);
+}
+
+/* Properties for my name that shows at the top of the page */
+#my_name {
+    font-family: var(--otaku);
+    font-size: 75px;
+    margin: auto;
+    margin-top: 2.5%;
+    text-align: center;
+    color: var(--color_titles);
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+/* Properties for the page title that shows at the top of the page,
+under my name */
+#page_title {
+    font-family: var(--otaku);
+    font-size: 60px;
+    margin: auto;
+    text-align: center;
+    color: var(--color_titles);
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+/* Properties for the menu and its options */
+#menu {
+    font-family: var(--otaku);
+    width: 700px;
+    margin: auto;
+    margin-top: 75px;
+    font-size: 40px;
+    text-align: center;
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; 
+}
+
+#menu div {
+    border-radius: 10px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 3px solid var(--theme_color_solid);
+    margin-bottom: 5%;
+    background-color:  var(--theme_color_transparent);
+}
+
+/*Social media icons container properties*/
+.social_media {
+    text-align: right !important;
+    background-color: unset !important;
+    border: unset !important;
+    margin-bottom: 2% !important;
+    font-size: 48px !important;
+}
+
+/*Social media icons properties*/
+.fa_custom {
+    margin-right: 10px;
+}
+
+/* Properties for when the user hovers 
+the mouse on one of the menu's options */
+#menu div:hover {
+    background-color: var(--theme_color_solid);
+    transition: 0.5s
+}
+
+/* Menu links' properties.
+No blue hyperlink text. 
+No line under the text.
+No purple color when the user clicks on the links. */
+a, a:visited {
+    text-decoration: none;
+    color: black;
+    outline: 0;
+}
+
+/* Properties for the "About me" and "Skills" section. */
+#about_me, #skills {
+    height: var(--section_height);
+    min-height: var(--min_section_height);
+    background-color: white;
+    border-bottom: var(--border);
+}
+
+#about_me img {
+    float: left;
+    clear: both;
+    height: var(--section_height);
+    min-height: var(--min_section_height);
+    margin-right: var(--section_image_margin);
+    border-bottom: var(--border);
+    border-right: var(--border);
+}
+
+#skills img {
+    float: right;
+    clear: both;
+    height: var(--section_height);
+    min-height: var(--min_section_height);
+    margin-left: var(--section_image_margin);
+    border-bottom: var(--border);
+    border-left: var(--border);
+}
+
+/* Properties for the "FAQ" section. */
+#faq {
+    height: 100vh;
+    background-color: white;
+    margin: auto;
+}
+
+/* Section title and text properties*/
+h3 {
+    font-family: var(--otaku);
+    text-align: center;
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 1%;
+    padding-top: 1%;
+}
+
+.section_p {
+    color: var(--color_text);
+    font-family: var(--text_font);
+    font-size: var(--section-font-size);
+    margin-top: 0;
+    margin-bottom: 0%;
+    margin-right: 5%;
+    margin-left: 27.5%;
+}
+
+/* Styling of hobbies list */
+#hobbies {
+    font-family: var(--text_font);;
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0;
+    font-size: var(--section-font-size);
+    text-indent: 5%;
+    color: var(--color_text);
+}
+
+/* Back to top button properties */
+#btn-back-to-top {
+    position: fixed;
+    display: none;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer; 
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    background-color: var(--theme_color_solid);
+}
+
+/* Accordion design and properties. 
+Code adapted from: https://alvarotrigo.com/blog/css-accordion/ */
+#faq_list {
+    max-width: 700px;
+    margin: auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+section.faq_list {
+    padding-top: 2em;
+    padding-bottom: 3em;
+}
+
+#faq_list ul {
+    text-align: left;
+}
+
+.transition, p, ul li i:before, ul li i:after {
+    transition: all 0.3s;
+}
+
+#faq_list .no-select, #faq h2 {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    user-select: none;
+}
+
+#faq_list h2 {
+    color: var(--theme_color_solid);
+    font-family: var(--text_font);
+    font-size: 24px;
+    line-height: 24px;
+    text-align: left;
+    padding: 15px 15px 0;
+    text-transform: none;
+    font-weight: 300;
+    letter-spacing: 1px;
+    display: block;
+    margin: 0;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#faq_list p {
+    color: var(--color_text);
+    text-align: left;
+    font-family: var(--text_font);
+    font-size: 18px;
+    line-height: 1.45;
+    position: relative;
+    overflow: hidden;
+    max-height: 250px;
+    will-change: max-height;
+    contain: layout;
+    display: inline-block;
+    opacity: 1;
+    transform: translate(0, 0);
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 0 50px 0 15px;
+    transition: .3s opacity, .6s max-height;
+    hyphens: auto;
+    z-index: 2;
+}
+
+#faq_list ul {
+    list-style: none;
+    perspective: 900;
+    padding: 0 0 20px 0px;
+    margin: 0;
+}
+
+#faq_list ul li {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    -webkit-tap-highlight-color: transparent;
+    border: 2px solid var(--theme_color_solid);
+    border-radius: 5px;
+}
+
+#faq_list ul li + li {
+    margin-top: 15px;
+}
+
+#faq_list ul li:last-of-type {
+    padding-bottom: 0;
+}
+
+#faq_list ul li i {
+    position: absolute;
+    transform: translate(-6px, 0);
+    margin-top: 28px;
+    right: 15px;
+}
+
+#faq_list ul li i:before, ul li i:after {
+    content: "";
+    position: absolute;
+    background-color: var(--theme_color_solid);
+    width: 3px;
+    height: 9px;
+}
+
+#faq_list ul li i:before {
+    transform: translate(-2px, 0) rotate(45deg);
+}
+  
+#faq_list ul li i:after {
+    transform: translate(2px, 0) rotate(-45deg);
+}
+  
+#faq_list ul li input[type=checkbox] {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    touch-action: manipulation;
+}
+  
+#faq_list ul li input[type=checkbox]:checked ~ h2 {
+    color: var(--color_text);
+}
+  
+#faq_list ul li input[type=checkbox]:checked ~ p {
+    max-height: 0;
+    transition: .3s;
+    opacity: 0;
+}
+  
+#faq_list ul li input[type=checkbox]:checked ~ i:before {
+    transform: translate(2px, 0) rotate(45deg);
+}
+
+#faq_list ul li input[type=checkbox]:checked ~ i:after {
+    transform: translate(-2px, 0) rotate(-45deg);
+}
+
+/* Linkedin link properties 
+The orange "here" in one of the accordion's answers */
+#LinkedIn {
+color: var(--theme_color_solid);
+font-weight: bold;
+}
+  
+/* Skills' images properties, using flex */
+#skills ul {
+list-style-type: none; 
+display: flex;
+flex-wrap: wrap;
+gap: calc(15px + 10%) ;
+margin-top: 3.5%;
+padding: 0 20px 0 20px;
+}
+
+#skills li {
+height: 90px;
+flex-grow: 1;
+}
+
+#skills li:last-child {
+flex-grow: 9;
+height: 0;
+}
+
+#skills > ul > li > img  {
+max-height: 100%;
+min-width: 100%;
+min-height: unset;
+object-fit: contain;
+vertical-align: bottom;
+border: none;
+border-radius: 5px;
+}
+  
+/* Fade in animation
+Used when user lands on the page */
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Location of Otaku font */
+@font-face {
+    font-family: Otaku;
+    src: url('../fonts/Otaku Rant italbold.ttf');
+}
+  
+/* Subtitle contour */
+@supports (-webkit-text-stroke: 1px var(--color_titles)) {
+    #page_title {
+        -webkit-text-stroke: 1px var(--color_titles);
+        -webkit-text-fill-color: var(--theme_color_solid);
+    }
+}
+
+/* CSS code to make 
+the webpage reactive to different browser window sizes 
+on desktop computers */
+
+@media only screen and (max-width: 700px) and (hover: hover)  {
+    #skills > img, #about_me > img {
+      display: none;
+    }
+
+    #welcome_screen {
+        height: 500px;
+    }
+
+    #about_me, #skills {
+        height: unset;
+        min-height: unset;
+    }
+
+    #faq {
+        height: unset;
+    }
+
+    #menu div {
+        font-size: 35px;
+    }
+
+    #my_name {
+        font-size: 50px;
+    }
+
+    #page_title {
+        font-size: 35px;
+    }
+
+    #menu {
+        width: 75%;
+        max-width: 300px;
+        margin-top: 60px;
+    }
+
+    .section_p {
+        margin: 0 5% 0 5%;
+        color: var(--color_text);
+    }
+
+    .section_p:last-of-type {
+        margin: 0 5% 5% 5%;
+    }
+  
+    #hobbies {
+        margin: 0;
+        text-align: center;
+        color: var(--color_text);
+    }
+  
+    h3 {
+        font-size: 32px;
+        margin: 5%
+    }
+  
+    #faq_list p, #faq_list h2, 
+    #hobbies, .section_p  {
+        font-size: 18px;
+    }
+
+    #skills ul {
+        margin-right: 5%;
+    }
+    
+    #skills li {
+        height: 75px;
+    }
+
+    .social_media {
+        font-size: 40px !important;
+    }
+}
+
+@media only screen and (min-width: 701px)  and (max-width: 949px) and (hover: hover) {
+    #skills > img, #about_me > img {
+      display: none;
+    }
+
+    #welcome_screen {
+        height: 500px;
+    }
+
+    #about_me, #skills {
+        height: unset;
+        min-height: unset;
+    }
+
+    #faq {
+        height: unset;
+    }
+
+    #menu div {
+        font-size: 35px;
+    }
+
+    #my_name {
+        font-size: 50px;
+    }
+
+    #page_title {
+        font-size: 35px;
+    }
+
+    #menu {
+        width: 75%;
+        max-width: 300px;
+        margin-top: 60px;
+    }
+
+    .section_p {
+        margin: 0 5% 0 5%;
+        color: var(--color_text);
+    }
+
+    .section_p:last-of-type {
+        margin: 0 5% 5% 5%;
+    }
+  
+    #hobbies {
+        margin: 0;
+        text-align: center;
+        color: var(--color_text);
+    }
+  
+    h3 {
+        font-size: 38px;
+        margin: 5%
+    }
+  
+    #faq_list p, #faq_list h2, 
+    #hobbies, .section_p  {
+        font-size: 20px;
+    }
+
+    #skills ul {
+        margin-right: 5%;
+    }
+    
+    #skills li {
+        height: 75px;
+    }
+
+    .social_media {
+        font-size: 40px !important;
+    }
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1400px) and (hover: hover)  {
+    #skills > img, #about_me > img {
+      display: none;
+    }
+
+    #about_me, #skills {
+        height: unset;
+        min-height: unset;
+    }
+
+    #faq {
+        height: unset;
+    }
+
+    #menu {
+        width: 500px;
+    }
+
+    #menu div {
+        font-size: 35px;
+    }
+
+    .section_p {
+        margin: 0 5% 0 5%;
+        color: var(--color_text);
+    }
+
+    .section_p:last-of-type {
+        margin-bottom: 2.5%;
+    }
+  
+    #hobbies {
+        margin: 0;
+        text-align: center;
+        color: var(--color_text);
+    }
+  
+    h3 {
+        font-size: 42px;
+        margin: 2.5% 0 
+    }
+  
+    #faq_list p, #faq_list h2, 
+    #hobbies, .section_p  {
+        font-size: 22px;
+    }
+
+    #skills ul {
+        margin-right: 5%;
+    }
+    
+    #skills li {
+        height: 85px;
+    }
+}
+
+/* CSS code to make 
+the webpage reactive to different screen sizes 
+for mobile devices in landscape mode */
+
+@media only screen and (max-height: 300px) 
+and (orientation: landscape) 
+and (hover: none) {
+    #skills > img, #about_me > img,
+     #skills, #about_me, #welcome_screen  {
+        min-height: unset;
+        height: 100vh;
+    }
+
+    #menu div:hover {
+        background-color: var(--theme_color_transparent);
+        transition: unset;
+    }
+
+    #faq_list {
+        max-width: 90%; }
+
+    
+    #hobbies, .section_p  {
+        font-size: 1.6vw;
+    }
+
+    h3 {
+        font-size: 4vw;  
+    }
+
+    #faq_list h2, #faq_list p {
+        font-size: 2.5vw;
+    }
+
+    #skills li {
+        height: 14vh;
+    }
+    
+    #my_name {
+        font-size: 7vw;
+    }
+
+    #page_title {
+        font-size: 5vw;
+    }
+
+    #menu {
+        max-width: 200px; 
+        font-size: 2.75vw;
+        margin-top: 1%;
+    }
+
+    #menu div {
+        height: 30px;
+        line-height: 30px;
+        border-radius: 5px;
+    }
+
+    .social_media {
+        font-size: 25px !important;
+    }
+
+    .fa_custom {
+        margin-right: 1%;
+    }
+}
+
+@media only screen and (min-height: 301px) 
+and (orientation: landscape) 
+and (hover: none) {
+    #skills > img, #about_me > img,
+     #skills, #about_me, #welcome_screen  {
+        min-height: unset;
+        height: 100vh;
+    }
+
+    #menu div:hover {
+        background-color: var(--theme_color_transparent);
+        transition: unset;
+    }
+
+    #faq_list {
+        max-width: 90%; }
+
+    
+    #hobbies, .section_p  {
+        font-size: 1.6vw;
+    }
+
+    h3 {
+        font-size: 4vw;  
+    }
+
+    #faq_list h2, #faq_list p {
+        font-size: 2.5vw;
+    }
+
+    #skills li {
+        height: 12vh;
+    }
+    
+    #my_name {
+        font-size: 7vw;
+    }
+
+    #page_title {
+        font-size: 5vw;
+    }
+
+    #menu {
+        max-width: 300px; 
+        font-size: 4vw;
+        margin-top: 5%;
+    }
+
+    #menu div {
+        height: 35px;
+        line-height: 35px
+    }
+
+    .social_media {
+        font-size: 35px !important;
+    }
+}
+
+@media only screen and (min-height: 400px) 
+and (orientation: landscape) 
+and (hover: none) {
+    #skills > img, #about_me > img,
+     #skills, #about_me, #welcome_screen  {
+        min-height: unset;
+        height: 100vh;
+    }
+
+    #menu div:hover {
+        background-color: var(--theme_color_transparent);
+        transition: unset;
+    }
+
+    #faq_list {
+        max-width: 90%; }
+
+    
+    #hobbies, .section_p  {
+        font-size: 1.6vw;
+    }
+
+    h3 {
+        font-size: 4vw;  
+    }
+
+    #faq_list h2, #faq_list p {
+        font-size: 2.5vw;
+    }
+
+    #skills li {
+        height: 12vh;
+    }
+    
+    #my_name {
+        font-size: 7vw;
+    }
+
+    #page_title {
+        font-size: 5vw;
+    }
+
+    #menu {
+        max-width: 300px; 
+        font-size: 3.5vw;
+        margin-top: 3.5%;
+    }
+
+    #menu div {
+        height: 40px;
+        line-height: 40px
+    }
+
+    .social_media {
+        font-size: 35px !important;
+    }
+}
+
+@media only screen and (min-height: 750px)
+and (orientation: landscape) 
+and (hover: none) {
+
+    #skills > img, #about_me > img,
+     #skills, #about_me  {
+        min-height: unset;
+        height: 50vh;
+    }
+
+    #faq_list {
+        max-width: 90%; }
+ 
+    #hobbies, .section_p  {
+        font-size: 1.4vw;
+    }
+
+    #faq_list h2, #faq_list p {
+        font-size: 1.75vw;
+    }
+
+    #menu div:hover {
+        background-color: var(--theme_color_transparent);
+        transition: unset;
+    }
+
+    h3 {
+        font-size: 4vw;  
+    }
+
+    #skills li {
+        height: 8vh;
+    }
+    
+    #my_name {
+        font-size: 7vw;
+    }
+
+    #page_title {
+        font-size: 5vw;
+    }
+
+    #menu {
+        max-width: 500px;
+        font-size: 3vw;
+        margin-top: 5%;
+    }
+
+    #menu div {
+        height: 60px;
+        line-height: 60px
+    }
+
+    .social_media {
+        font-size: 50px !important;
+    }
+}
+
+/* CSS code to make 
+the webpage reactive to different screen sizes 
+for mobile devices in portrait mode */
+
+@media only screen and (max-width: 300px) 
+and (orientation: portrait) 
+and (hover: none) {
+    #skills > img, #about_me > img {
+      display: none;
+    }
+
+    body, #welcome_screen {
+        min-width: unset;
+    }
+
+    #about_me, #skills {
+        height: 50vh;
+        min-height: unset;
+        height: unset;
+        border: unset
+    }
+
+    #menu div:hover {
+        background-color: var(--theme_color_transparent);
+        transition: unset;
+    }
+
+    #my_name {
+        font-size: 10vw;
+        margin-top: 12.5%;
+    }
+
+    #page_title {
+        font-size: 9vw;
+    }
+
+    #menu {
+        font-size: 8vw;
+        width: 75%;
+        margin-top: 27.5%;
+    }
+
+    .section_p {
+        margin: 0 5% 0 5%;
+        color: var(--color_text);
+    }
+
+    .section_p:last-of-type {
+        margin-bottom: 2.5%;
+    }
+  
+    #hobbies {
+        margin: 0;
+        text-align: center;
+        color: var(--color_text);
+    }
+  
+    h3 {
+        font-size: 6vw;
+        margin: 5%
+    }
+   
+    #hobbies, .section_p,
+    #faq_list p, #faq_list h2 {
+        font-size: 3.75vw;
+    }
+    
+    #skills li {
+        height: 6.5vh;
+    }
+
+    #faq_list h2 {
+        padding: 15px 30px 0 10px;
+    }
+
+    .social_media {
+        font-size: 35px !important;
+    }
+
+    .fa_custom {
+        margin-right: 1%;
+    }
+}
+
+@media only screen and (min-width: 301px) 
+and (orientation: portrait) 
+and (hover: none) {
+    #skills > img, #about_me > img {
+      display: none;
+    }
+
+    #about_me, #skills, #faq {
+        min-height: unset;
+        height: unset;
+        border: unset;
+    }
+
+    #menu div:hover {
+        background-color: var(--theme_color_transparent);
+        transition: unset;
+    }
+
+    #my_name {
+        font-size: 10vw;
+        margin-top: 12.5%;
+    }
+
+    #page_title {
+        font-size: 9vw;
+    }
+
+    #menu {
+        font-size: 8vw;
+        width: 75%;
+        margin-top: 27.5%;
+    }
+
+    .section_p {
+        margin: 0 5% 0 5%;
+        color: var(--color_text);
+    }
+
+    #hobbies {
+        margin: 0;
+        text-align: center;
+        color: var(--color_text);
+    }
+  
+    h3 {
+        font-size: 6vw;
+        margin: 5%
+    }
+  
+    #faq_list p, #faq_list h2, 
+    #hobbies, .section_p  {
+        font-size: 12px;
+    }
+    
+    #skills li {
+        height: 7.5vh;
+    }
+
+    .social_media {
+        font-size: 40px !important;
+    }
+}
+
+@media only screen and (min-width: 376px) 
+and (orientation: portrait) 
+and (hover: none) {
+    #skills > img, #about_me > img {
+      display: none;
+    }
+
+    #about_me, #skills, #faq {
+        min-height: unset;
+    }
+
+    #menu div:hover {
+        background-color: var(--theme_color_transparent);
+        transition: unset;
+    }
+    #my_name {
+        font-size: 10vw;
+        margin-top: 20%;
+    }
+
+    #page_title {
+        font-size: 9vw;
+    }
+
+    #menu {
+        font-size: 8vw;
+        width: 75%;
+        margin-top: 35%;
+    }
+
+    .section_p {
+        margin: 0 5% 0 5%;
+        color: var(--color_text);
+    }
+  
+    #hobbies {
+        margin: 0;
+        text-align: center;
+        color: var(--color_text);
+    }
+  
+    h3 {
+        font-size: 6vw;
+        margin: 5%
+    }
+  
+    #faq_list p, #faq_list h2, 
+    #hobbies, .section_p  {
+        font-size: 12px;
+    }
+    
+    #faq_list h2 {
+        padding: 15px 25px 0 15px;
+    }
+    
+    #skills li {
+        height: 7.25vh;
+    }
+}
+
+@media only screen and (min-width: 500px) 
+and (orientation: portrait) 
+and (hover: none) {
+    #skills > img, #about_me > img {
+      display: none;
+    }
+
+    #about_me, #skills {
+        min-height: unset;
+    }
+
+    #menu div:hover {
+        background-color: var(--theme_color_transparent);
+        transition: unset;
+    }
+
+    #my_name {
+        font-size: 10vw;
+        margin-top: 12.5%;
+    }
+
+    #page_title {
+        font-size: 9vw;
+    }
+
+    #menu {
+        font-size: 5vw;
+        width: 50%;
+        margin-top: 15%;
+    }
+
+    .section_p {
+        margin: 0 5% 0 5%;
+        color: var(--color_text);
+    }
+  
+    #hobbies {
+        margin: 0;
+        text-align: center;
+        color: var(--color_text);
+    }
+  
+    h3 {
+        font-size: 26px;
+        margin: 5%
+    }
+  
+    #faq_list p, #faq_list h2, 
+    #hobbies, .section_p  {
+        font-size: 2.5vw;
+    }
+
+    #skills li {
+        height: 8vh;
+    }
+    .social_media {
+        font-size: 40px !important;
+    }
+}
+
+@media only screen and (min-width: 650px) 
+and (orientation: portrait) 
+and (hover: none) {
+    #skills > img, #about_me > img {
+      display: none;
+    }
+
+    #about_me, #skills {
+        min-height: unset;
+    }
+
+    #welcome_screen  {
+        max-height: unset;
+    }
+
+    #menu div:hover {
+        background-color: var(--theme_color_transparent);
+        transition: unset;
+    }
+    #my_name {
+        font-size: 10vw;
+        margin-top: 12.5%;
+    }
+
+    #page_title {
+        font-size: 9vw;
+    }
+
+    #menu {
+        font-size: 4.5vw;
+        width: 50%;
+        margin-top: 15%;
+    }
+
+    .section_p {
+        margin: 0 5% 0 5%;
+        color: var(--color_text);
+    }
+  
+    #hobbies {
+        margin: 0;
+        text-align: center;
+        color: var(--color_text);
+    }
+  
+    h3 {
+        font-size: 4vw;
+        margin: 5%
+    }
+  
+    #faq_list p, #faq_list h2, 
+    #hobbies, .section_p  {
+        font-size: 2.75vw;
+    }
+    
+    #skills li {
+        height: 8vh;
+    }
+
+    .social_media {
+        font-size: 50px !important;
+    }
+}
+
+@media only screen and (min-width: 900px) 
+and (orientation: portrait) 
+and (hover: none) {
+    #skills > img, #about_me > img {
+      display: none;
+    }
+
+    #about_me, #skills {
+        min-height: unset;
+    }
+
+    #welcome_screen  {
+        max-height: unset;
+    }
+
+    #menu div:hover {
+        background-color: var(--theme_color_transparent);
+        transition: unset;
+    }
+    #my_name {
+        font-size: 10vw;
+        margin-top: 12.5%;
+    }
+
+    #page_title {
+        font-size: 9vw;
+    }
+
+    #menu {
+        font-size: 4.5vw;
+        width: 50%;
+        margin-top: 15%;
+    }
+
+    .section_p {
+        margin: 0 5% 0 5%;
+        color: var(--color_text);
+    }
+  
+    #hobbies {
+        margin: 0;
+        text-align: center;
+        color: var(--color_text);
+    }
+  
+    h3 {
+        font-size: 4vw;
+        margin: 5%
+    }
+  
+    #faq_list p, #faq_list h2, 
+    #hobbies, .section_p  {
+        font-size: 2.75vw;
+    }
+
+    #skills li {
+        height: 8vh;
+    }
+
+    .social_media {
+        font-size: 55px !important;
+    }
+
+    #menu div {
+        height: 60px;
+        line-height: 60px
+    }
+    
+    .social_media {
+        font-size: 60px !important;
+    }
+}
+
+
+
+
+
+  
+  
+  
+  
+  
