@@ -30,7 +30,8 @@ ${SECTION_FAQ} =            //section[@id="faq"]
 ${LI_FIND_ABOUT_MIGUEL} =     //h2[contains(text(), "find out more about Miguel?")]/preceding-sibling::input[@type="checkbox"]/parent::li
 
 ### Data to use in the test ###
-${URL} =    http://127.0.0.1:5500/my_super_website/index.html
+${URL} =    https://miguelrodrigues.onrender.com
+# ${URL} =    http://127.0.0.1:5500/my_super_website/index.html
 # ${URL} =    https://www.miguelamrodrigues.com
 
 
