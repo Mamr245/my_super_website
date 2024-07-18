@@ -1,6 +1,7 @@
 # runs tests for push-events, for pull requests and using cron schedule:
 name: Run Robot Framework Tests
 on:
+  workflow_dispatch:
   push:
     # runs tests for commits pushed to master
     branches:
