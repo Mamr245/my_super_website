@@ -1,4 +1,15 @@
-robot_test:
+name: Robot Framework - Python
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+ 
+permissions:
+  contents: read
+ 
+jobs:
+  robot_test:
     runs-on: ubuntu-latest
     name: Run Robot Framework Tests
     steps:
@@ -6,6 +17,3 @@ robot_test:
         uses: actions/checkout@v2
       - name: Robot Framework
         uses: joonvena/robotframework-docker-action@v1.0
-        with:
-          browser: 'firefox'
-          robot_threads: 2
