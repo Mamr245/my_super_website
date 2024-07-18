@@ -22,12 +22,9 @@ The webpage is very simple. Content wise, it contains:
 
 - Made it responsive to different screen sizes.
 - Made it interactive with some clickable buttons. 
-- Created automated tests to perform an overall checkup of its content and funcionalities. 
 
 ### :hammer: Used Technologies
-`HTML5` `CSS3` `JavaScript`
-`Robot Framework` `Selenium`
-`VSCode` `PyCharm`
+`HTML5` `CSS3` `JavaScript` `VSCode`
 
 ### 🖱️ How can I check it? 
 You can access the website by clicking the following URL 👉 https://miguelrodrigues.onrender.com/
