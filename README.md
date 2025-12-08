@@ -2,29 +2,29 @@
 <h1 align="center">My Super Website! :rocket:</h1> 
 
 ### :question: Why?
-I've recently learned HTML/CSS and wanted to put my skills to the test by creating a webpage of my own.
-I also pretended to get acquainted with Git and GitHub and therefore combined both objectives.
-This was the result: **my first webpage and my first repository!**
+I wanted to put my skills to the test by creating a webpage of my own after learning the foundations of HTML and CSS.
+I also wanted to get acquainted with Git and GitHub, so I combined both goals.
+This is the result: **my first webpage and my first repository!**
 
 ### :computer: What is it about?
-The webpage is very simple. Content wise, it contains:
+The webpage is very simple. Content-wise, it contains:
 
-- A section where I speak a bit about me. 
-- A section where I present some of my tech skills.
-- A "Frequently Asked Questions" section where you can check what I am up to!
+- A section where I talk a bit about myself. 
+- A section showcasing some of my tech skills.
+- A "Frequently Asked Questions" section where you can see what I am up to!
 
- Additionally: 
+Additionally: 
 
-- Made it responsive to different screen sizes.
-- Made it interactive with some clickable buttons. 
+- It's responsive to different screen sizes.
+- It includes interactive elements with clickable buttons.
 
-### :hammer: Used Technologies
+### :hammer: Technologies used:
 `HTML5` `CSS3` `JavaScript` `VSCode`
 
 ### 🖱️ How can I check it? 
 You can access the website by clicking the following URL 👉 https://miguelrodrigues.onrender.com/
 
-### :speech_balloon: Have any suggestions or have found any issue? 
-Feel free to tell me about them :speech_balloon: I'm always looking to improve!
+### :speech_balloon: Have any suggestions or found any issue? 
+Feel free to let me know if you have any suggestions or find any issues! I'm always looking to improve.
 
-<h2 align="center">Thank you for passing by! :smile:</h2>
+<h2 align="center">Thank you for visiting! :smile:</h2>
