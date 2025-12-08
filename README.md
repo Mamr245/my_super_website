@@ -19,7 +19,7 @@ Additionally:
 - It includes interactive elements with clickable buttons.
 
 ### :hammer: Technologies used:
-`HTML5` `CSS3` `JavaScript` `VSCode`
+`HTML5` `CSS3` `JavaScript` `VSCode` `Git`
 
 ### 🖱️ How can I check it? 
 You can access the website by clicking the following URL 👉 https://miguelrodrigues.onrender.com/
